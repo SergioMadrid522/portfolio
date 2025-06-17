@@ -1,122 +1,38 @@
-import fabianGallery from "../../assets/img/fabian-gallery-blog.png";
+import type { ProjectSectionProps } from "./types.ts";
+
 import "../Main.css";
-function ProjectSection() {
+function ProjectSection({projects}: ProjectSectionProps) {
   return (
     <section className="project-section">
       <h2>Projects</h2>
       <div className="projects-container">
         <div className="projects">
-          <article className="project">
-            <div className="project-image">
-              <img src={fabianGallery} alt="project image" />
-            </div>
-            <div className="project-details">
-              <h3>Project Name</h3>
-              <p>description goes here</p>
-              <div className="tech-stack">
-                <h4>Technologies used:</h4>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-                <div className="see-project">
-                  <a href="">See me working!</a>
+          {projects.map((item, index) => (
+            <article className="project" key={index}>
+              <div className="project-image">
+                <img src={item.img} alt={item.imageAlt} />
+              </div>
+              <div className="project-details">
+                <h3>{item.projectName}</h3>
+                <p>{item.projectDescription}</p>
+                <div className="tech-stack">
+                  <h4>Tech stack:</h4>
+                  <ul>
+                    {item.techStackIcons.map((icon, index) => (
+                      <li key={index}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d={icon}/>
+                        </svg>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="see-project">
+                    <a href={item.projectLink} target="_blank">See me working!</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article className="project">
-            <div className="project-image">
-              <img src={fabianGallery} alt="project image" />
-            </div>
-            <div className="project-details">
-              <h3>Project Name</h3>
-              <p>description goes here</p>
-              <div className="tech-stack">
-                <h4>Technologies used:</h4>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <article className="project">
-            <div className="project-image">
-              <img src={fabianGallery} alt="project image" />
-            </div>
-            <div className="project-details">
-              <h3>Project Name</h3>
-              <p>description goes here</p>
-              <div className="tech-stack">
-                <h4>Technologies used:</h4>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <article className="project">
-            <div className="project-image">
-              <img src={fabianGallery} alt="project image" />
-            </div>
-            <div className="project-details">
-              <h3>Project Name</h3>
-              <p>description goes here</p>
-              <div className="tech-stack">
-                <h4>Technologies used:</h4>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <article className="project">
-            <div className="project-image">
-              <img src={fabianGallery} alt="project image" />
-            </div>
-            <div className="project-details">
-              <h3>Project Name</h3>
-              <p>description goes here</p>
-              <div className="tech-stack">
-                <h4>Technologies used:</h4>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <article className="project">
-            <div className="project-image">
-              <img src={fabianGallery} alt="project image" />
-            </div>
-            <div className="project-details">
-              <h3>Project Name</h3>
-              <p>description goes here</p>
-              <div className="tech-stack">
-                <h4>Technologies used:</h4>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </div>
-            </div>
-          </article>
+            </article>
+          ))}
         </div>
       </div>
     </section>

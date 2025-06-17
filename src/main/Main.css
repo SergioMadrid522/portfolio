@@ -27,7 +27,9 @@
   padding: 10px 5px;
 }
 .project-section .projects-container .projects .project .project-details p {
+  display: flex;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .project-section .projects-container .projects .project .project-details ul {
   display: flex;
@@ -35,10 +37,17 @@
   gap: 12px;
 }
 .project-section .projects-container .projects .project .project-details .see-project {
-  margin-top: 10px;
+  padding: 20px 0;
+  text-align: center;
+}
+.project-section .projects-container .projects .project .project-details .see-project a {
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 0.25s ease;
 }
 .project-section .projects-container .projects .project .project-details .see-project a:hover {
-  text-decoration: underline;
+  background-color: rgb(245, 224, 201);
 }
 
 main .main-content {

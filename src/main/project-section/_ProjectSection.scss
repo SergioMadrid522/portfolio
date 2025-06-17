@@ -26,7 +26,9 @@
         .project-details {
           padding: 10px 5px;
           p {
+            display: flex;
             margin-bottom: 10px;
+            flex-wrap: wrap;
           }
           ul {
             display: flex;
@@ -34,10 +36,15 @@
             gap: 12px;
           }
           .see-project {
-            margin-top: 10px;
+            padding: 20px 0;
+            text-align: center;
             a {
+              background-color: bisque;
+              padding: 10px;
+              border-radius: 7px;
+              transition: all .25s ease;
               &:hover {
-                text-decoration: underline;
+                background-color: rgb(245, 224, 201);
               }
             }
           }
