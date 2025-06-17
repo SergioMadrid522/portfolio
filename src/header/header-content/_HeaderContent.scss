@@ -1,0 +1,40 @@
+.my-description-content {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  width: 50%;
+  .my-image {
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .my-description-details {
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 22.5px;
+    }
+    .my-social-media {
+      ul {
+        margin-top: 15px;
+        li {
+          display: inline-block;
+          list-style: none;
+          margin-right: 15px;
+          svg {
+            width: 27.5px;
+          }
+        }
+      }
+      button {
+        margin-top: 15px;
+        cursor: pointer;
+        padding: 8px;
+      }
+    }
+  }
+}

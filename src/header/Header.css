@@ -1,0 +1,42 @@
+.my-description-content {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  width: 50%;
+}
+.my-description-content .my-image {
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.my-description-content .my-image img {
+  width: 100%;
+}
+.my-description-content .my-description-details h1 {
+  margin-bottom: 20px;
+}
+.my-description-content .my-description-details p {
+  line-height: 22.5px;
+}
+.my-description-content .my-description-details .my-social-media ul {
+  margin-top: 15px;
+}
+.my-description-content .my-description-details .my-social-media ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+}
+.my-description-content .my-description-details .my-social-media ul li svg {
+  width: 27.5px;
+}
+.my-description-content .my-description-details .my-social-media button {
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.my-description {
+  display: flex;
+  place-content: center;
+  padding: 50px 0;
+}/*# sourceMappingURL=Header.css.map */

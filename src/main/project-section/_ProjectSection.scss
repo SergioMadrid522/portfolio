@@ -1,0 +1,48 @@
+.project-section {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .projects-container {
+    .projects {
+      display: flex;
+      place-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      .project {
+        border: 1px solid gainsboro;
+        border-radius: 6px;
+        .project-image {
+          position: relative;
+          width: 365px;
+          overflow: hidden;
+          border-radius: 6px;
+          img {
+            width: 100%;
+            &:hover {
+              background-color: #1d1c1cbd;
+            }
+          }
+        }
+        .project-details {
+          padding: 10px 5px;
+          p {
+            margin-bottom: 10px;
+          }
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .see-project {
+            margin-top: 10px;
+            a {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
