@@ -1,16 +1,30 @@
 .tools-section {
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
   .tools-content {
     padding: 50px;
     ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 50px;
+      flex-wrap: wrap;
+      gap: 40px;
       li {
         text-align: center;
         svg {
           width: 50px;
+          height: 50px;
           margin-bottom: 10px;
+          transition: filter 0.3s ease;
+        }
+        p {
+          margin-top: 5px;
+          font-size: 0.9rem;
+          color: #555;
         }
       }
     }

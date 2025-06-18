@@ -1,4 +1,9 @@
 @use "./navbar-content/NavbarContent";
 .global-navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
   border-bottom: 1px solid rgb(220, 220, 220);
+  scroll-behavior: smooth;
 }

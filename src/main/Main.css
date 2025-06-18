@@ -1,5 +1,8 @@
 .project-section h2 {
   margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
 }
 .project-section .projects-container {
   padding: 50px;
@@ -11,48 +14,81 @@
   flex-wrap: wrap;
 }
 .project-section .projects-container .projects .project {
-  border: 1px solid gainsboro;
-  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-section .projects-container .projects .project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 .project-section .projects-container .projects .project .project-image {
-  position: relative;
   width: 365px;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 10px 10px 0 0;
 }
 .project-section .projects-container .projects .project .project-image img {
   width: 100%;
-}
-.project-section .projects-container .projects .project .project-image img:hover {
-  background-color: rgba(29, 28, 28, 0.7411764706);
+  display: block;
+  transition: transform 0.3s ease;
 }
 .project-section .projects-container .projects .project .project-details {
-  padding: 10px 5px;
+  padding: 15px;
+}
+.project-section .projects-container .projects .project .project-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #222;
 }
 .project-section .projects-container .projects .project .project-details p {
-  display: flex;
   margin-bottom: 10px;
-  flex-wrap: wrap;
+  line-height: 1.6;
+  color: #555;
 }
 .project-section .projects-container .projects .project .project-details ul {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+.project-section .projects-container .projects .project .project-details ul li {
+  list-style: none;
+}
+.project-section .projects-container .projects .project .project-details ul li svg {
+  width: 24px;
+  height: 24px;
+  fill: #666;
+  transition: fill 0.3s ease;
+}
+.project-section .projects-container .projects .project .project-details ul li svg:hover {
+  fill: #000;
+}
 .project-section .projects-container .projects .project .project-details .see-project {
   padding: 20px 0;
   text-align: center;
 }
 .project-section .projects-container .projects .project .project-details .see-project a {
-  background-color: bisque;
-  padding: 10px;
-  border-radius: 7px;
-  transition: all 0.25s ease;
+  background-color: #ffebcd;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 .project-section .projects-container .projects .project .project-details .see-project a:hover {
-  background-color: rgb(245, 224, 201);
+  background-color: #f5e0c9;
+  color: #000;
 }
 
+.tech-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
 .tech-section .tech-content {
   padding: 50px;
 }
@@ -60,16 +96,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .tech-section .tech-content ul li {
   text-align: center;
 }
 .tech-section .tech-content ul li svg {
   width: 50px;
+  height: 50px;
   margin-bottom: 10px;
 }
 
+.tools-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
 .tools-section .tools-content {
   padding: 50px;
 }
@@ -77,21 +121,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .tools-section .tools-content ul li {
   text-align: center;
 }
 .tools-section .tools-content ul li svg {
   width: 50px;
+  height: 50px;
   margin-bottom: 10px;
+  transition: filter 0.3s ease;
+}
+.tools-section .tools-content ul li p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
 }
 
+.contact-section {
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
 .contact-section .contact-content {
   padding: 20px;
 }
 .contact-section .contact-content p {
   line-height: 25px;
+  margin-bottom: 10px;
+  color: #555;
+}
+.contact-section .contact-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.contact-section .contact-content ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.contact-section .contact-content ul li a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.contact-section .contact-content ul li a:hover {
+  color: #0a66c2;
+  transform: scale(1.05);
 }
 
 main .main-content {

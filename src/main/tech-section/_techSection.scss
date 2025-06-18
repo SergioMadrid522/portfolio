@@ -1,15 +1,23 @@
 .tech-section {
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
   .tech-content {
     padding: 50px;
     ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 50px;
+      flex-wrap: wrap;
+      gap: 40px;
       li {
         text-align: center;
         svg {
           width: 50px;
+          height: 50px;
           margin-bottom: 10px;
         }
       }

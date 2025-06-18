@@ -1,17 +1,20 @@
 import type { ProjectSectionProps } from "./types.ts";
-
 import "../Main.css";
 
 function ProjectSection({ projects }: ProjectSectionProps) {
   return (
-    <section className="project-section">
+    <section className="project-section" aria-labelledby="projects-heading">
       <h2>Projects</h2>
       <div className="projects-container">
         <div className="projects">
           {projects.map((item, id) => (
             <article className="project" key={id}>
               <div className="project-image">
-                <img src={item.img} alt={item.imageAlt} />
+                <img
+                  src={item.img}
+                  alt={item.imageAlt || `Preview of ${item.projectName}`}
+                  loading="lazy"
+                />
               </div>
               <div className="project-details">
                 <h3>{item.projectName}</h3>
@@ -23,8 +26,9 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                       <li key={index}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="16"
+                          width="20"
                           viewBox="0 0 16 16"
+                          aria-hidden="true"
                         >
                           <path fillRule="evenodd" d={icon} />
                         </svg>
@@ -32,7 +36,11 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                     ))}
                   </ul>
                   <div className="see-project">
-                    <a href={item.projectLink} target="_blank">
+                    <a
+                      href={item.projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       See me working!
                     </a>
                   </div>

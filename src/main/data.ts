@@ -1,5 +1,7 @@
 import fabianGallery from "../assets/img/fabian-gallery-blog.png";
-
+import ecommerce from "../assets/img/e-commerce.png";
+import fbLandingPage from "../assets/img/facebook-landing-page.png";
+import calculator from "../assets/img/calculator.png";
 export const projects = [
   {
     id: 1,
@@ -7,44 +9,44 @@ export const projects = [
     imageAlt: "Fabian Gallery",
     projectName: "Fabian Gallery",
     projectDescription: "A photo gallery blog ...",
-    techStackIcons: ["React", "Vite", "CSS"],
+    techStackIcons: ["React", "Vite", "SCSS"],
     projectLink: "https://fabian-gallery.netlify.app/",
   },
   {
     id: 2,
-    img: fabianGallery,
+    img: ecommerce,
     imageAlt: "E-commerce",
     projectName: "E-commerce",
     projectDescription: "An e-commerce ...",
     techStackIcons: ["React", "Vite", "CSS"],
-    projectLink: "https://fabian-gallery.netlify.app/",
+    projectLink: "",
   },
   {
     id: 3,
-    img: fabianGallery,
-    imageAlt: "Fabian Gallery",
+    img: fbLandingPage,
+    imageAlt: "Facebook landing page",
     projectName: "Facebook landing page",
     projectDescription: "This is a copy of the facebook landing page.",
     techStackIcons: ["React", "Vite", "CSS"],
-    projectLink: "https://fabian-gallery.netlify.app/",
+    projectLink: "",
   },
   {
     id: 4,
-    img: fabianGallery,
+    img: "",
     imageAlt: "To-Do App",
     projectName: "To-Do App",
     projectDescription: "lorem ...",
     techStackIcons: ["React", "Vite", "CSS"],
-    projectLink: "https://fabian-gallery.netlify.app/",
+    projectLink: "",
   },
   {
     id: 5,
-    img: fabianGallery,
+    img: calculator,
     imageAlt: "Calculator",
-    projectName: "E-commerce",
+    projectName: "Basic calculator",
     projectDescription: "Lorem ipsum dolor sit amet consectetur adipisic",
     techStackIcons: ["React", "Vite", "CSS"],
-    projectLink: "https://fabian-gallery.netlify.app/",
+    projectLink: "",
   },
 ];
 export const stack = [
