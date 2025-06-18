@@ -1,6 +1,9 @@
 .project-section h2 {
   margin-bottom: 20px;
 }
+.project-section .projects-container {
+  padding: 50px;
+}
 .project-section .projects-container .projects {
   display: flex;
   place-content: center;
@@ -48,6 +51,47 @@
 }
 .project-section .projects-container .projects .project .project-details .see-project a:hover {
   background-color: rgb(245, 224, 201);
+}
+
+.tech-section .tech-content {
+  padding: 50px;
+}
+.tech-section .tech-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.tech-section .tech-content ul li {
+  text-align: center;
+}
+.tech-section .tech-content ul li svg {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.tools-section .tools-content {
+  padding: 50px;
+}
+.tools-section .tools-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.tools-section .tools-content ul li {
+  text-align: center;
+}
+.tools-section .tools-content ul li svg {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-section .contact-content {
+  padding: 20px;
+}
+.contact-section .contact-content p {
+  line-height: 25px;
 }
 
 main .main-content {

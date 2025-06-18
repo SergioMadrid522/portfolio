@@ -1,8 +1,9 @@
 type tools = {
-    svg: string;
-    name: string;
-}
+  svg: string;
+  name: string;
+  color: string;
+};
 
 export type ToolsSectionProps = {
-    tools: tools[];
-}
+  tools: tools[];
+};

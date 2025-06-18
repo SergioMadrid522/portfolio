@@ -1,8 +1,9 @@
 type TechStack = {
-    techSvg: string;
-    techName: string;
-}
+  svg: string;
+  name: string;
+  color: string;
+};
 
 export type TechSectionProps = {
-    stack: TechStack[];
-}
+  stack: TechStack[];
+};

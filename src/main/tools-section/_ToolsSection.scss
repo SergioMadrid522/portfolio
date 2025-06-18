@@ -1,0 +1,18 @@
+.tools-section {
+  .tools-content {
+    padding: 50px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      li {
+        text-align: center;
+        svg {
+          width: 50px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

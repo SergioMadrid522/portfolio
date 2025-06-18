@@ -3,6 +3,7 @@
     margin-bottom: 20px;
   }
   .projects-container {
+    padding: 50px;
     .projects {
       display: flex;
       place-content: center;
@@ -11,6 +12,7 @@
       .project {
         border: 1px solid gainsboro;
         border-radius: 6px;
+
         .project-image {
           position: relative;
           width: 365px;
@@ -42,7 +44,7 @@
               background-color: bisque;
               padding: 10px;
               border-radius: 7px;
-              transition: all .25s ease;
+              transition: all 0.25s ease;
               &:hover {
                 background-color: rgb(245, 224, 201);
               }

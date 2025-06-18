@@ -1,4 +1,7 @@
 @use "./project-section/ProjectSection";
+@use "./tech-section/techSection";
+@use "./tools-section/ToolsSection";
+@use "./contact/Contact";
 main {
   .main-content {
     margin: 0 4%;

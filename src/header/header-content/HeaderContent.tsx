@@ -1,20 +1,19 @@
 import type { HeaderContentProps } from "./types.ts";
-//import CV from "./";
+// import CV from "./"; // Importa tu CV aquí
 import myPicture from "../../assets/myPicture.jpg";
 import "../Header.css";
 
 function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
   const handleDownloadCV = () => {
-    const url = CV; // Reemplaza con la ruta correcta
-    const nombreArchivo = "Sergio_Fabian_CV.pdf"; // Reemplaza con el nombre deseado
+    const url = CV;
+    const nombreArchivo = "Sergio_Fabian_CV.pdf";
 
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", nombreArchivo); // Para que se descargue y no se abra en el navegador
-
-    document.body.appendChild(link); // Necesario para Firefox
+    link.setAttribute("download", nombreArchivo);
+    document.body.appendChild(link);
     link.click();
-    link.remove(); // Limpia el enlace creado
+    link.remove();
   };
 
   return (
@@ -34,7 +33,12 @@ function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
           <ul>
             {socialMedia.map((item, index) => (
               <li key={index}>
-                <a href={item.link}>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Link to social media`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill={item.color}
@@ -46,7 +50,7 @@ function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
               </li>
             ))}
           </ul>
-          <button onChange={handleDownloadCV}>Download CV</button>
+          <button onClick={handleDownloadCV}>Download CV</button>
         </div>
       </div>
     </div>
