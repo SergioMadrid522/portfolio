@@ -5,11 +5,13 @@ import ToolsSection from "./tools-section/ToolsSection";
 import { projects, stack, tools } from "./data.ts";
 
 import "./Main.css";
+import Aboutme from "./about-me/AboutMe.tsx";
 
 function Main() {
   return (
     <main>
       <div className="main-content">
+        <Aboutme />
         <ProjectSection projects={projects} />
         <TechSection stack={stack} />
         <ToolsSection tools={tools} />

@@ -1,0 +1,10 @@
+@use "./about-me-content/Habilities";
+.about-me {
+  padding: 25px 40px;
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+  }
+}

@@ -2,7 +2,11 @@ import type { TechSectionProps } from "./types.ts";
 
 function TechSection({ stack }: TechSectionProps) {
   return (
-    <section className="tech-section" aria-labelledby="tech-heading">
+    <section
+      className="tech-section"
+      aria-labelledby="tech-heading"
+      id="Tech-Tools"
+    >
       <h2>Tech Stack</h2>
       <div className="tech-content">
         <ul role="list">

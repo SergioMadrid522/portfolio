@@ -3,7 +3,11 @@ import "../Main.css";
 
 function ProjectSection({ projects }: ProjectSectionProps) {
   return (
-    <section className="project-section" aria-labelledby="projects-heading">
+    <section
+      className="project-section"
+      aria-labelledby="projects-heading"
+      id="projects"
+    >
       <h2>Projects</h2>
       <div className="projects-container">
         <div className="projects">
@@ -26,11 +30,14 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                       <li key={index}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          viewBox="0 0 16 16"
+                          viewBox={icon.viewbox}
                           aria-hidden="true"
                         >
-                          <path fillRule="evenodd" d={icon} />
+                          <path
+                            fillRule="evenodd"
+                            fill={item.colors?.[index] || "#000"}
+                            d={icon.svg}
+                          />
                         </svg>
                       </li>
                     ))}

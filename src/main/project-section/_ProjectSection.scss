@@ -19,6 +19,7 @@
         background: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 450px;
         &:hover {
           transform: translateY(-5px);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -27,8 +28,9 @@
           width: 365px;
           overflow: hidden;
           border-radius: 10px 10px 0 0;
-
+          width: 100%;
           img {
+            object-fit: contain;
             width: 100%;
             display: block;
             transition: transform 0.3s ease;
@@ -44,6 +46,7 @@
           p {
             margin-bottom: 10px;
             line-height: 1.6;
+            width: 100%;
             color: #555;
           }
           ul {
@@ -53,13 +56,8 @@
             li {
               list-style: none;
               svg {
-                width: 24px;
-                height: 24px;
-                fill: #666;
-                transition: fill 0.3s ease;
-                &:hover {
-                  fill: #000;
-                }
+                margin: 10px 0;
+                width: 45px;
               }
             }
           }
@@ -67,17 +65,19 @@
             padding: 20px 0;
             text-align: center;
             a {
-              background-color: #ffebcd;
-              padding: 10px 20px;
-              border-radius: 8px;
-              text-decoration: none;
-              color: #333;
-              font-weight: 500;
-              transition: background-color 0.25s ease, color 0.25s ease;
-
+              margin-top: 15px;
+              cursor: pointer;
+              padding: 10px 18px;
+              border: none;
+              background-color: #0070f3;
+              color: white;
+              font-weight: 600;
+              font-size: 1rem;
+              border-radius: 6px;
+              transition: background-color 0.1s ease, box-shadow 0.3s ease;
               &:hover {
-                background-color: #f5e0c9;
-                color: #000;
+                background-color: #005bb5;
+                box-shadow: 0 0 8px rgba(0, 91, 181, 0.7);
               }
             }
           }

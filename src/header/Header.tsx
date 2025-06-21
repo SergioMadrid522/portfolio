@@ -5,7 +5,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className="my-description">
+    <header className="my-description" id="home">
       <HeaderContent socialMedia={socialMedia} />
     </header>
   );

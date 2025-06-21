@@ -1,5 +1,5 @@
 import type { HeaderContentProps } from "./types.ts";
-// import CV from "./"; // Importa tu CV aquí
+// import CV from "./";
 import myPicture from "../../assets/myPicture.jpg";
 import "../Header.css";
 
@@ -19,16 +19,11 @@ function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
   return (
     <div className="my-description-content">
       <div className="my-image">
-        <img src={myPicture} alt="A picture of Sergio Acuña" />
+        <img src={myPicture} alt="A picture of Sergio Acuña" loading="lazy" />
       </div>
       <div className="my-description-details">
-        <h1>Sergio Fabian Acuña Madrid</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-          tempore explicabo magni cupiditate a fugit similique soluta
-          exercitationem cumque corporis ut minus excepturi hic in ad delectus
-          tempora maiores aspernatur.
-        </p>
+        <h1>Frontend Developer</h1>
+        <h3>Sergio Fabian Acuña Madrid</h3>
         <div className="my-social-media">
           <ul>
             {socialMedia.map((item, index) => (

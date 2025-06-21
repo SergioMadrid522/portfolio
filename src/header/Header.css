@@ -1,14 +1,13 @@
 .my-description {
   display: flex;
   place-content: center;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .my-description-content {
   display: flex;
   gap: 40px;
   padding: 30px;
-  width: 50%;
   align-items: center;
 }
 .my-description-content .my-image {

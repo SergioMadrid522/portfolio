@@ -1,3 +1,86 @@
+.me,
+.soft-skills,
+.education,
+.learning {
+  border: 1px solid transparent;
+  border-radius: 16px;
+  padding: 24px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.me:hover,
+.soft-skills:hover,
+.education:hover,
+.learning:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.me h3,
+.soft-skills h3,
+.education h3,
+.learning h3 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  color: #1f2937;
+  font-weight: 700;
+  position: relative;
+  padding-left: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+.me h3::before,
+.soft-skills h3::before,
+.education h3::before,
+.learning h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 6px;
+  height: 80%;
+  background: linear-gradient(to bottom, #4f46e5, #6366f1);
+  border-radius: 4px;
+}
+.me h3:hover::before,
+.soft-skills h3:hover::before,
+.education h3:hover::before,
+.learning h3:hover::before {
+  background-color: #0070f3;
+}
+.me p,
+.soft-skills p,
+.education p,
+.learning p {
+  cursor: default;
+  color: #374151;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+.habilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 50px 0;
+}
+
+.about-me {
+  padding: 25px 40px;
+}
+.about-me h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+
 .project-section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
@@ -20,6 +103,7 @@
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 450px;
 }
 .project-section .projects-container .projects .project:hover {
   transform: translateY(-5px);
@@ -29,8 +113,11 @@
   width: 365px;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  width: 100%;
 }
 .project-section .projects-container .projects .project .project-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   display: block;
   transition: transform 0.3s ease;
@@ -46,6 +133,7 @@
 .project-section .projects-container .projects .project .project-details p {
   margin-bottom: 10px;
   line-height: 1.6;
+  width: 100%;
   color: #555;
 }
 .project-section .projects-container .projects .project .project-details ul {
@@ -57,30 +145,28 @@
   list-style: none;
 }
 .project-section .projects-container .projects .project .project-details ul li svg {
-  width: 24px;
-  height: 24px;
-  fill: #666;
-  transition: fill 0.3s ease;
-}
-.project-section .projects-container .projects .project .project-details ul li svg:hover {
-  fill: #000;
+  margin: 10px 0;
+  width: 45px;
 }
 .project-section .projects-container .projects .project .project-details .see-project {
   padding: 20px 0;
   text-align: center;
 }
 .project-section .projects-container .projects .project .project-details .see-project a {
-  background-color: #ffebcd;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 10px 18px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.1s ease, box-shadow 0.3s ease;
 }
 .project-section .projects-container .projects .project .project-details .see-project a:hover {
-  background-color: #f5e0c9;
-  color: #000;
+  background-color: #005bb5;
+  box-shadow: 0 0 8px rgba(0, 91, 181, 0.7);
 }
 
 .tech-section h2 {

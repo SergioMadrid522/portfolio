@@ -1,3 +1,4 @@
+@use "./about-me/AboutMe";
 @use "./project-section/ProjectSection";
 @use "./tech-section/techSection";
 @use "./tools-section/ToolsSection";
@@ -10,5 +11,4 @@ main {
       list-style: none;
     }
   }
-  //padding: 10px;
 }

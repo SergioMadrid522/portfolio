@@ -4,9 +4,9 @@ function NavbarContent({ menu }: NavbarContentProps) {
   return (
     <div className="navbar-content">
       <ul>
-        {menu.map((item, index) => (
+        {menu.map((menu, index) => (
           <li key={index}>
-            <a href="">{item}</a>
+            <a href={menu.link}>{menu.name}</a>
           </li>
         ))}
       </ul>
