@@ -7,8 +7,13 @@ type ProjectItems = {
     svg: string;
     viewbox: string;
   }[];
+  /* toolsUsed: {
+    svg: string;
+    viewbox: string;
+  }[]; */
   colors: string[];
   projectLink: string;
+  code: string;
 };
 
 export type ProjectSectionProps = {

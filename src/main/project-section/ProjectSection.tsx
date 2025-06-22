@@ -42,7 +42,28 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                       </li>
                     ))}
                   </ul>
+                  {/*                   <h4>Tools used:</h4>
+                  <ul>
+                    {item.toolsUsed.map((tool, idx) => (
+                      <li key={idx}>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox={tool.viewbox}
+                          aria-hidden="true"
+                        >
+                          <path fillRule="evenodd" fill="#000" d={tool.svg} />
+                        </svg>
+                      </li>
+                    ))}
+                  </ul> */}
                   <div className="see-project">
+                    <a
+                      href={item.projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
                     <a
                       href={item.projectLink}
                       target="_blank"

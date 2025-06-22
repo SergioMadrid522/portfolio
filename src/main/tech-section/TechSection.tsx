@@ -14,7 +14,7 @@ function TechSection({ stack }: TechSectionProps) {
             <li key={index} aria-label={item.name}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
+                viewBox={item.viewbox}
                 role="img"
                 aria-label={item.name}
               >

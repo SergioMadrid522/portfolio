@@ -11,7 +11,7 @@ function ToolsSection({ tools }: ToolsSectionProps) {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill={tool.color}
-                viewBox="0 0 16 16"
+                viewBox={tool.viewbox}
                 role="img"
                 aria-label={tool.name}
               >

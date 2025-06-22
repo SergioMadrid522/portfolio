@@ -163,6 +163,7 @@
   font-size: 1rem;
   border-radius: 6px;
   transition: background-color 0.1s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
 }
 .project-section .projects-container .projects .project .project-details .see-project a:hover {
   background-color: #005bb5;

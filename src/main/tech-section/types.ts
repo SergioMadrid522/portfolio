@@ -1,7 +1,8 @@
 type TechStack = {
-  svg: string;
-  name: string;
-  color: string;
+    svg: string;
+    name: string;
+    color: string;
+    viewbox: string;
 };
 
 export type TechSectionProps = {
