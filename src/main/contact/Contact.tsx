@@ -1,6 +1,10 @@
 function Contact() {
   return (
-    <section className="contact-section" aria-labelledby="contact-heading">
+    <section
+      className="contact-section"
+      aria-labelledby="contact-heading"
+      id="contact"
+    >
       <h2 id="contact-heading">Contact me</h2>
       <div className="contact-content">
         <p>

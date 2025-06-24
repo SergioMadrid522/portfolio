@@ -11,16 +11,16 @@ export const items = [
     link: "#projects",
     name: "Projects",
   },
-  {
+  /* {
     link: "#certificates",
     name: "Certificates",
-  },
+  }, */
   {
-    link: "#Tech-Tools",
+    link: "#tech-Tools",
     name: "Tech & Tools Stack",
   },
   {
-    link: "#Contact",
+    link: "#contact",
     name: "Contact me",
   },
 ];

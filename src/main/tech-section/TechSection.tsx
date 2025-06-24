@@ -5,7 +5,7 @@ function TechSection({ stack }: TechSectionProps) {
     <section
       className="tech-section"
       aria-labelledby="tech-heading"
-      id="Tech-Tools"
+      id="tech-Tools"
     >
       <h2>Tech Stack</h2>
       <div className="tech-content">

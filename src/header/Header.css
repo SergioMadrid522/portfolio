@@ -88,6 +88,8 @@
 }
 
 .my-description {
+  scroll-margin-top: 70px;
+  overscroll-behavior: none;
   display: flex;
   place-content: center;
   padding: 50px 0;
