@@ -1,6 +1,7 @@
 import fabianGallery from "../assets/img/fabian-gallery-blog.png";
 import ecommerce from "../assets/img/e-commerce.png";
 import fbLandingPage from "../assets/img/facebook-landing-page.png";
+import todoapp from "../assets/img/toDoApp.png";
 //import calculator from "../assets/img/calculator.png";
 import weconnect from "../assets/img/weconnect.png";
 
@@ -151,7 +152,7 @@ export const projects = [
   },
   {
     id: 5,
-    img: "#",
+    img: todoapp,
     imageAlt: "To-Do App",
     projectName: "To-Do App",
     projectDescription:
@@ -181,7 +182,7 @@ export const projects = [
       },
     ], */
     colors: ["#e34c26", "#264de4", "#cd6799", "#f0db4f"],
-    projectLink: "#",
+    projectLink: "https://sergiomadrid522.github.io/ToDoApp",
     code: "#",
   },
 ];
