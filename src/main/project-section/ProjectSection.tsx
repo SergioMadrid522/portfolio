@@ -35,27 +35,39 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                         >
                           <path
                             fillRule="evenodd"
-                            fill={item.colors?.[index] || "#000"}
+                            fill={item.colors?.[index] || "#333"}
                             d={icon.svg}
                           />
                         </svg>
                       </li>
                     ))}
                   </ul>
-                  {/*                   <h4>Tools used:</h4>
-                  <ul>
-                    {item.toolsUsed.map((tool, idx) => (
-                      <li key={idx}>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox={tool.viewbox}
-                          aria-hidden="true"
-                        >
-                          <path fillRule="evenodd" fill="#000" d={tool.svg} />
-                        </svg>
-                      </li>
-                    ))}
-                  </ul> */}
+                  {item.toolsUsed.map((tool, idx) => {
+                    const isValidPath =
+                      typeof tool.svg === "string" &&
+                      tool.svg.trim().startsWith("M");
+
+                    return isValidPath ? (
+                      <>
+                        <h4>Tools used:</h4>
+                        <ul>
+                          <li key={idx}>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox={tool.viewbox || "0 0 24 24"}
+                              aria-hidden="true"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                fill={tool.colors}
+                                d={tool.svg}
+                              />
+                            </svg>
+                          </li>
+                        </ul>
+                      </>
+                    ) : null;
+                  })}
                   <div className="see-project">
                     <a
                       href={item.projectLink}

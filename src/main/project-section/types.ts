@@ -7,10 +7,11 @@ type ProjectItems = {
     svg: string;
     viewbox: string;
   }[];
-  /* toolsUsed: {
+  toolsUsed: {
     svg: string;
     viewbox: string;
-  }[]; */
+    colors: string;
+  }[];
   colors: string[];
   projectLink: string;
   code: string;
