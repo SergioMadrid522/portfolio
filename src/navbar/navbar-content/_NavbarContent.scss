@@ -1,12 +1,14 @@
 .navbar-content {
-  margin: 0 20px;
+  //margin: 0 20px;
   ul {
     display: flex;
     gap: 15px;
     justify-content: flex-end;
     padding: 25px;
+    width: 100%;
     li {
       list-style: none;
+      width: auto;
       a {
         position: relative;
         padding: 5px;

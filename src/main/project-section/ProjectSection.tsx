@@ -42,35 +42,42 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                       </li>
                     ))}
                   </ul>
-                  {item.toolsUsed.map((tool, idx) => {
-                    const isValidPath =
+                  {item.toolsUsed.some(
+                    (tool) =>
                       typeof tool.svg === "string" &&
-                      tool.svg.trim().startsWith("M");
+                      tool.svg.trim().startsWith("M")
+                  ) && (
+                    <div className="tools-used">
+                      <h4>Tools used:</h4>
+                      <ul>
+                        {item.toolsUsed.map((tool, idx) => {
+                          const isValidPath =
+                            typeof tool.svg === "string" &&
+                            tool.svg.trim().startsWith("M");
 
-                    return isValidPath ? (
-                      <>
-                        <h4>Tools used:</h4>
-                        <ul>
-                          <li key={idx}>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox={tool.viewbox || "0 0 24 24"}
-                              aria-hidden="true"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                fill={tool.colors}
-                                d={tool.svg}
-                              />
-                            </svg>
-                          </li>
-                        </ul>
-                      </>
-                    ) : null;
-                  })}
+                          return isValidPath ? (
+                            <li key={idx}>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox={tool.viewbox || "0 0 24 24"}
+                                aria-hidden="true"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  fill={tool.color}
+                                  d={tool.svg}
+                                />
+                              </svg>
+                            </li>
+                          ) : null;
+                        })}
+                      </ul>
+                    </div>
+                  )}
+
                   <div className="see-project">
                     <a
-                      href={item.projectLink}
+                      href={item.code}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

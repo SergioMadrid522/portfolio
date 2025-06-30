@@ -1,5 +1,5 @@
 import type { HeaderContentProps } from "./types.ts";
-// import CV from "./";
+import CV from "../../assets/cv/Sergio_Acuna_CV(Spanish).pdf";
 import myPicture from "../../assets/myPicture.jpg";
 import "../Header.css";
 
@@ -45,7 +45,9 @@ function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
               </li>
             ))}
           </ul>
-          <button onClick={handleDownloadCV}>Download CV</button>
+          <button className="download-cv" onClick={handleDownloadCV}>
+            Download CV
+          </button>
         </div>
       </div>
     </div>

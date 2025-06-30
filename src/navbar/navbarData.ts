@@ -17,10 +17,10 @@ export const items = [
   }, */
   {
     link: "#tech-Tools",
-    name: "Tech & Tools Stack",
+    name: "Stack",
   },
   {
     link: "#contact",
-    name: "Contact me",
+    name: "Contact",
   },
 ];

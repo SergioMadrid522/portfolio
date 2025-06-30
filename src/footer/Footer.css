@@ -65,6 +65,148 @@
   gap: 50px;
 }
 
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
+} */
+@media screen and (max-width: 767px) {
+  .global-navbar .navbar-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .global-navbar .navbar-content ul li {
+    font-size: 1.09em;
+    font-weight: 600;
+    text-align: center;
+  }
+  .my-description {
+    padding: 0;
+  }
+  .my-description .my-description-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .my-description .my-description-content .my-description-details h3 {
+    font-size: 1.35em;
+  }
+  .my-description .my-description-content .my-description-details .my-social-media {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .my-description .my-description-content .my-description-details .my-social-media ul {
+    gap: 13px;
+    justify-content: center;
+  }
+  .my-description .my-description-content .my-description-details .my-social-media ul li {
+    margin: 0;
+    padding: 5px;
+  }
+  .my-description .my-description-content .my-description-details .my-social-media ul li a {
+    width: 75px;
+    height: 75px;
+  }
+  .my-description .my-description-content .my-description-details .my-social-media ul li a svg {
+    width: 40px;
+    height: 40px;
+  }
+  .my-description .my-description-content .my-description-details .my-social-media .download-cv {
+    margin-top: 25px;
+    font-size: 1.2em;
+  }
+  .about-me {
+    margin-top: 20px;
+    scroll-margin-top: 85px;
+  }
+  .about-me .habilities {
+    padding: 15px 0;
+  }
+  .about-me .habilities p,
+  .about-me .habilities ul {
+    font-size: 1.2em;
+    color: #555;
+  }
+  .project-section {
+    margin-top: 50px;
+    scroll-margin-top: 110px;
+  }
+  .project-section .projects-container {
+    padding: 15px 0;
+  }
+  .project-section .projects-container .project-details h3 {
+    font-size: 1.8em !important;
+  }
+  .project-section .projects-container .project-details p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  .project-section .projects-container .project-details h4 {
+    font-size: 1.35em;
+  }
+  .project-section .projects-container:first-of-type .tools-used::after, .project-section .projects-container:nth-of-type(2) .tools-used::after {
+    transform: translateX(-75%) !important;
+  }
+  .tech-section,
+  .tools-section {
+    scroll-margin-top: 120px;
+    margin-top: 50px;
+  }
+  .tech-section h2,
+  .tools-section h2 {
+    margin: 8px;
+  }
+  .tech-section .tech-content,
+  .tech-section .tools-content,
+  .tools-section .tech-content,
+  .tools-section .tools-content {
+    padding: 15px 0;
+  }
+  .tech-section .tech-content ul,
+  .tech-section .tools-content ul,
+  .tools-section .tech-content ul,
+  .tools-section .tools-content ul {
+    gap: 30px;
+  }
+  .tech-section .tech-content ul li svg,
+  .tech-section .tools-content ul li svg,
+  .tools-section .tech-content ul li svg,
+  .tools-section .tools-content ul li svg {
+    width: 60px;
+    height: 60px;
+  }
+  .tech-section .tech-content ul li p,
+  .tech-section .tools-content ul li p,
+  .tools-section .tech-content ul li p,
+  .tools-section .tools-content ul li p {
+    font-size: 1.2em;
+  }
+  .contact-section {
+    scroll-margin-top: 120px;
+    margin-top: 50px;
+  }
+  .contact-section .contact-content p {
+    font-size: 1.2em;
+  }
+  .contact-section .contact-content ul {
+    margin-top: 30px;
+  }
+  .contact-section .contact-content ul li {
+    font-size: 1.2em;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-content h3 {
+    font-size: 1.8em !important;
+  }
+  .footer-content ul li {
+    text-align: center;
+    font-size: 1em;
+  }
+}
 .global-footer {
   background-color: #121212;
   color: #ddd;

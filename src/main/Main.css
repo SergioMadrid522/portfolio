@@ -1,6 +1,27 @@
+.habilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 50px 0;
+}
+.habilities .soft-skills ul,
+.habilities .languages ul,
+.habilities .learning ul {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding-left: 30px;
+}
+.habilities .soft-skills ul li,
+.habilities .languages ul li,
+.habilities .learning ul li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
 .me,
 .soft-skills,
-.education,
+.languages,
 .learning {
   border: 1px solid transparent;
   border-radius: 16px;
@@ -11,14 +32,14 @@
 }
 .me:hover,
 .soft-skills:hover,
-.education:hover,
+.languages:hover,
 .learning:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 .me h3,
 .soft-skills h3,
-.education h3,
+.languages h3,
 .learning h3 {
   margin-bottom: 16px;
   font-size: 1.3rem;
@@ -33,7 +54,7 @@
 }
 .me h3::before,
 .soft-skills h3::before,
-.education h3::before,
+.languages h3::before,
 .learning h3::before {
   content: "";
   position: absolute;
@@ -46,13 +67,13 @@
 }
 .me h3:hover::before,
 .soft-skills h3:hover::before,
-.education h3:hover::before,
+.languages h3:hover::before,
 .learning h3:hover::before {
   background-color: #0070f3;
 }
 .me p,
 .soft-skills p,
-.education p,
+.languages p,
 .learning p {
   cursor: default;
   color: #374151;
@@ -60,15 +81,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  line-height: 1.8;
-  letter-spacing: 0.3px;
-}
-
-.habilities {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  padding: 50px 0;
+  line-height: 1.5;
 }
 
 .about-me {
@@ -154,8 +167,11 @@
   width: 45px;
 }
 .project-section .projects-container .projects .project .project-details .see-project {
-  padding: 20px 0;
-  text-align: center;
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
 }
 .project-section .projects-container .projects .project .project-details .see-project a {
   margin-top: 15px;
@@ -173,6 +189,30 @@
 .project-section .projects-container .projects .project .project-details .see-project a:hover {
   background-color: #005bb5;
   box-shadow: 0 0 8px rgba(0, 91, 181, 0.7);
+}
+.project-section .projects-container .projects .project:first-of-type .tools-used, .project-section .projects-container .projects .project:nth-of-type(2) .tools-used {
+  position: relative;
+}
+.project-section .projects-container .projects .project:first-of-type .tools-used::after, .project-section .projects-container .projects .project:nth-of-type(2) .tools-used::after {
+  content: "Project in development";
+  position: absolute;
+  background-color: #ff4d4f;
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 7px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  z-index: 1;
+  margin: auto;
+  transform: translateX(-100%);
+}
+.project-section .projects-container .projects .project:first-of-type a[href]:last-of-type, .project-section .projects-container .projects .project:nth-of-type(2) a[href]:last-of-type {
+  background-color: #333;
+  pointer-events: none;
 }
 
 .tech-section {
@@ -198,10 +238,14 @@
   text-align: center;
 }
 .tech-section .tech-content ul li svg {
-  width: 100%;
+  width: 50px;
   height: 50px;
   margin-bottom: 10px;
   overflow: hidden;
+}
+.tech-section .tech-content ul li p {
+  font-size: 0.9em;
+  color: #555;
 }
 
 .tools-section h2 {
@@ -230,7 +274,6 @@
   transition: filter 0.3s ease;
 }
 .tools-section .tools-content ul li p {
-  margin-top: 5px;
   font-size: 0.9rem;
   color: #555;
 }
@@ -247,8 +290,8 @@
   padding: 20px;
 }
 .contact-section .contact-content p {
+  font-size: inherit;
   line-height: 25px;
-  margin-bottom: 10px;
   color: #555;
 }
 .contact-section .contact-content ul {
