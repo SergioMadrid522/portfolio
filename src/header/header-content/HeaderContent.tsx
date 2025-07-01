@@ -1,6 +1,6 @@
 import type { HeaderContentProps } from "./types.ts";
-import CV from "../../assets/cv/Sergio_Acuna_CV(Spanish).pdf";
-import myPicture from "../../assets/myPicture.jpg";
+import CV from "../../assets/cv/Sergio_Acuna_CV(English).pdf";
+import myPicture from "../../assets/myPicture.webp";
 import "../Header.css";
 
 function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
