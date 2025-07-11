@@ -177,7 +177,7 @@ export const projects = [
     ],
     colors: ["#e34c26", "#264de4", "#cd6799", "#f0db4f"],
     projectLink: "https://sergiomadrid522.github.io/ToDoApp",
-    code: "https://github.com/SergioMadrid522/ToDoApp",
+    code: "https://sergiotodoapp.netlify.app",
   },
   {
     id: 5,
