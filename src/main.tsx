@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 
 import "./index.css";
 import App from "./App.tsx";
-import { ThemeProvider } from "./navbar/navbar-content/handleClick.tsx";
+import { ThemeProvider } from "./navbar/navbar-content/HandleClick.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

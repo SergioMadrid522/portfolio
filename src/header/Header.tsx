@@ -2,7 +2,7 @@ import HeaderContent from "./header-content/HeaderContent";
 import { socialMedia } from "./data.ts";
 
 import "./Header.css";
-import { useTheme } from "../navbar/navbar-content/handleClick.tsx";
+import { useTheme } from "../navbar/navbar-content/HandleClick.tsx";
 
 function Header() {
   const { light } = useTheme();
