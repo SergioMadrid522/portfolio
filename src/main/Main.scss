@@ -71,6 +71,19 @@ main {
           background-color: #222 !important;
           border-color: #555 !important;
         }
+        /* .project-details {
+          .tech-stack {
+            ul {
+              li:nth-child(5) {
+                svg {
+                  path {
+                    fill: #dddddd !important;
+                  }
+                }
+              }
+            }
+          }
+        } */
       }
       p {
         color: #dcdcdc !important;
@@ -80,7 +93,7 @@ main {
       .tech-content {
         ul {
           li{
-            &:nth-child(9) {
+            &:nth-child(8) {
               //background-color: red;
               svg {
                 path {

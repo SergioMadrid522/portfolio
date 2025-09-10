@@ -486,6 +486,19 @@ main .main-content li {
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
   transition: background-color 0.3s ease;
+  /* .project-details {
+    .tech-stack {
+      ul {
+        li:nth-child(5) {
+          svg {
+            path {
+              fill: #dddddd !important;
+            }
+          }
+        }
+      }
+    }
+  } */
 }
 .dark-theme .main-content .projects article:hover {
   background-color: #222 !important;
@@ -494,7 +507,7 @@ main .main-content li {
 .dark-theme .main-content .projects p {
   color: #dcdcdc !important;
 }
-.dark-theme .main-content .tech-section .tech-content ul li:nth-child(9) svg path {
+.dark-theme .main-content .tech-section .tech-content ul li:nth-child(8) svg path {
   fill: #dddddd !important;
 }
 .dark-theme .main-content .tools-content ul li:first-child svg {
