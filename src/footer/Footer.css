@@ -185,6 +185,12 @@
   .contact-section .contact-content ul li {
     font-size: 0.8em;
   }
+  .contact-section form {
+    width: 80%;
+  }
+  .contact-section form button[type=submit] {
+    margin: 15px 0 10px;
+  }
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -270,14 +276,17 @@
     padding: 15px 0;
     margin: 0 auto;
   }
-  .project-section .projects-container .project-details h3 {
+  .project-section .projects-container .project:hover {
+    transform: none;
+  }
+  .project-section .projects-container .project .project-details h3 {
     font-size: 1.8em !important;
   }
-  .project-section .projects-container .project-details p {
+  .project-section .projects-container .project .project-details p {
     font-size: 1.2em;
     color: #555;
   }
-  .project-section .projects-container .project-details h4 {
+  .project-section .projects-container .project .project-details h4 {
     font-size: 1.35em;
   }
   .tech-section,
@@ -330,6 +339,13 @@
   .contact-section .contact-content ul li a {
     word-wrap: break-word;
     white-space: normal;
+  }
+  .contact-section form {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-section form button[type=submit] {
+    margin: 15px 0 10px;
   }
   .footer-content {
     display: flex;

@@ -1,7 +1,9 @@
 import type { ProjectSectionProps } from "./types.ts";
 import "../Main.css";
+//import { useTheme } from "../../navbar/navbar-content/handleClick.tsx";
 
 function ProjectSection({ projects }: ProjectSectionProps) {
+  //const { light } = useTheme();
   return (
     <section
       className="project-section"
