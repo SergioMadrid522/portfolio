@@ -1,3 +1,5 @@
+//import ContactForm from "./ContactForm";
+
 function Contact() {
   return (
     <section
@@ -34,6 +36,8 @@ function Contact() {
           </li>
         </ul>
       </div>
+      {/* <h3>or send me a email directly from here :)</h3>
+       <ContactForm /> */}
     </section>
   );
 }

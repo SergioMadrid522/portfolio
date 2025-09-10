@@ -1,5 +1,5 @@
 import type { HeaderContentProps } from "./types.ts";
-import CV from "../../assets/cv/Sergio_Acuna_CV(Spanish).pdf";
+import CV from "../../assets/cv/Sergio_Acuna_CV.pdf";
 import myPicture from "../../assets/myPicture.jpg";
 import "../Header.css";
 

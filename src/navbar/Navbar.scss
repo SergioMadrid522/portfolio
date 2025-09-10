@@ -6,3 +6,34 @@
   z-index: 1000;
   border-bottom: 1px solid rgb(220, 220, 220);
 }
+.light-theme {
+  transition: all 0.3s ease-out;
+  ul {
+    color: #2d2c2c;
+  }
+  .theme {
+    &__light,
+    &__dark {
+      fill: #555;
+    }
+  }
+}
+.dark-theme {
+  transition: all 0.3s ease-in;
+  background-color: #2d2c2c;
+  border-bottom: 1px solid #2d2c2c;
+  a {
+    color: #fff;
+    &::before {
+      background-color: #cebf148c !important;
+    }
+  }
+  .theme {
+    &__light,
+    &__dark {
+      svg {
+        fill: #cebf14 !important;
+      }
+    }
+  }
+}

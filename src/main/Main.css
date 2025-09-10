@@ -133,10 +133,13 @@
   width: 100%;
 }
 .project-section .projects-container .projects .project .project-image img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  width: 100%;
+  height: 200px;
   transition: transform 0.3s ease;
 }
 .project-section .projects-container .projects .project .project-details {
@@ -190,10 +193,37 @@
   background-color: #005bb5;
   box-shadow: 0 0 8px rgba(0, 91, 181, 0.7);
 }
-.project-section .projects-container .projects .project:first-of-type .see-project a:last-of-type, .project-section .projects-container .projects .project:nth-of-type(2) .see-project a:last-of-type {
+.project-section .projects-container .projects .project:first-of-type .see-project a:last-of-type {
   position: relative;
 }
-.project-section .projects-container .projects .project:first-of-type .see-project a:last-of-type::after, .project-section .projects-container .projects .project:nth-of-type(2) .see-project a:last-of-type::after {
+.project-section .projects-container .projects .project:first-of-type .see-project a:last-of-type::after {
+  content: "Local version available, will be online soon";
+  position: absolute;
+  background-color: #ff4d4f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 7px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  white-space: wrap;
+  z-index: 1;
+  width: 90%;
+  text-align: center;
+  height: 65%;
+}
+.project-section .projects-container .projects .project:first-of-type a[href]:last-of-type {
+  pointer-events: none;
+}
+.project-section .projects-container .projects .project:nth-of-type(2) .see-project a:last-of-type, .project-section .projects-container .projects .project:nth-of-type(3) .see-project a:last-of-type, .project-section .projects-container .projects .project:nth-of-type(5) .see-project a:last-of-type {
+  position: relative;
+}
+.project-section .projects-container .projects .project:nth-of-type(2) .see-project a:last-of-type::after, .project-section .projects-container .projects .project:nth-of-type(3) .see-project a:last-of-type::after, .project-section .projects-container .projects .project:nth-of-type(5) .see-project a:last-of-type::after {
   content: "Project in development";
   position: absolute;
   background-color: #ff4d4f;
@@ -213,7 +243,7 @@
   width: 90%;
   height: 65%;
 }
-.project-section .projects-container .projects .project:first-of-type a[href]:last-of-type, .project-section .projects-container .projects .project:nth-of-type(2) a[href]:last-of-type {
+.project-section .projects-container .projects .project:nth-of-type(2) a[href]:last-of-type, .project-section .projects-container .projects .project:nth-of-type(3) a[href]:last-of-type, .project-section .projects-container .projects .project:nth-of-type(5) a[href]:last-of-type {
   pointer-events: none;
 }
 
@@ -315,10 +345,193 @@
   transform: scale(1.05);
 }
 
+form {
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(220, 220, 220, 0.6);
+  width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form .input-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .input-wrap__names {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 80%;
+  padding: 0.75em 0;
+}
+form .input-wrap__important-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  padding: 0.75em 0;
+}
+form .input-container {
+  width: 100%;
+}
+form .input-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+form .input-container input,
+form .input-container textarea {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  font-size: 1rem;
+  color: #444;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+form .input-container input:focus,
+form .input-container textarea:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 8px rgba(0, 112, 243, 0.5);
+  background-color: #f9fbff;
+  color: #222;
+}
+form .input-container input::-moz-placeholder, form .input-container textarea::-moz-placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+form .input-container input::placeholder,
+form .input-container textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+form button[type=submit] {
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, box-shadow 0.3s ease;
+  margin: 15px 0 10px;
+  align-self: center;
+  box-shadow: 0 4px 8px rgba(0, 112, 243, 0.4);
+}
+form button[type=submit]:hover {
+  background-color: #005bb5;
+  box-shadow: 0 0 12px rgba(0, 91, 181, 0.8);
+}
+form button[type=submit]:active {
+  background-color: #004494;
+  box-shadow: none;
+}
+
 main .main-content {
   margin: 0 4%;
   padding: 20px;
 }
 main .main-content li {
   list-style: none;
+}
+
+.light-theme {
+  background-color: #fff;
+}
+
+.dark-theme {
+  background-color: #121212;
+  border: none;
+}
+.dark-theme section h2,
+.dark-theme section h3,
+.dark-theme section h4 {
+  color: #e0e0e0 !important;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+.dark-theme section p {
+  color: #cfcfcf !important;
+}
+.dark-theme .main-content .about-me .habilities .me,
+.dark-theme .main-content .about-me .habilities .soft-skills,
+.dark-theme .main-content .about-me .habilities .languages, .dark-theme .main-content .about-me .habilities .learning {
+  /* border: 1px solid #2e2e2e !important;
+  background: #121212; */
+  border: 1px solid #333 !important;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+.dark-theme .main-content .about-me .habilities .me ul,
+.dark-theme .main-content .about-me .habilities .soft-skills ul,
+.dark-theme .main-content .about-me .habilities .languages ul, .dark-theme .main-content .about-me .habilities .learning ul {
+  color: #dcdcdc !important;
+  list-style-type: disc;
+}
+.dark-theme .main-content .projects article {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333 !important;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+}
+.dark-theme .main-content .projects article:hover {
+  background-color: #222 !important;
+  border-color: #555 !important;
+}
+.dark-theme .main-content .projects p {
+  color: #dcdcdc !important;
+}
+.dark-theme .main-content .tech-section .tech-content ul li:nth-child(9) svg path {
+  fill: #dddddd !important;
+}
+.dark-theme .main-content .tools-content ul li:first-child svg {
+  fill: #F1502F !important;
+}
+.dark-theme .main-content .tools-content ul li:first-child svg, .dark-theme .main-content .tools-content ul li:nth-child(2) svg, .dark-theme .main-content .tools-content ul li:last-child svg {
+  fill: #dddddd;
+}
+.dark-theme .main-content .contact-section ul li {
+  color: #dcdcdc;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.dark-theme .main-content .contact-section form {
+  box-shadow: none;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+.dark-theme .main-content .contact-section form .input-container label {
+  color: #d7d7d7;
+}
+.dark-theme .main-content .contact-section form .input-container input,
+.dark-theme .main-content .contact-section form .input-container textarea {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  color: #e0e0e0;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.dark-theme .main-content .contact-section form .input-container input:focus,
+.dark-theme .main-content .contact-section form .input-container textarea:focus {
+  background-color: #3a3a3a;
+  outline: none;
+  box-shadow: 0 0 5px #6a9fb5;
+  color: #fff;
 }/*# sourceMappingURL=Main.css.map */

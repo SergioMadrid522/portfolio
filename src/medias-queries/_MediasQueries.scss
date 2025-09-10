@@ -5,7 +5,6 @@
         display: flex;
         gap: 10px;
         padding: 20px;
-
         li {
           font-size: 1.09em;
           font-weight: 600;
@@ -123,8 +122,13 @@
         }
       }
     }
+    form {
+      width: 80%;
+      button[type="submit"] {
+        margin: 15px 0 10px;
+      }
+    }
   }
-
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -221,16 +225,21 @@
     .projects-container {
       padding: 15px 0;
       margin: 0 auto;
-      .project-details {
-        h3 {
-          font-size: 1.8em !important;
+      .project {
+        &:hover {
+          transform: none;
         }
-        p {
-          font-size: 1.2em;
-          color: #555;
-        }
-        h4 {
-          font-size: 1.35em;
+        .project-details {
+          h3 {
+            font-size: 1.8em !important;
+          }
+          p {
+            font-size: 1.2em;
+            color: #555;
+          }
+          h4 {
+            font-size: 1.35em;
+          }
         }
       }
     }
@@ -277,6 +286,13 @@
             white-space: normal;
           }
         }
+      }
+    }
+    form {
+      width: 100%;
+      padding: 0;
+      button[type="submit"] {
+        margin: 15px 0 10px;
       }
     }
   }

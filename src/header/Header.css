@@ -44,21 +44,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #f0f0f0;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .my-description-content .my-description-details .my-social-media ul li a svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   transition: fill 0.3s ease;
 }
 .my-description-content .my-description-details .my-social-media ul li a:hover {
   background-color: #0070f3;
   outline: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .my-description-content .my-description-details .my-social-media ul li a:hover svg {
   fill: white;
@@ -87,4 +87,35 @@
   display: flex;
   place-content: center;
   padding: 50px 0;
+}
+
+.light-theme h1,
+.light-theme h3 {
+  color: #222;
+}
+
+.dark-theme h1,
+.dark-theme h3 {
+  color: #fff !important;
+}
+.dark-theme .my-social-media a {
+  background-color: rgba(206, 191, 20, 0.5490196078) !important;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(206, 191, 20, 0.4);
+}
+.dark-theme .my-social-media a svg {
+  fill: #212020;
+  width: 24px;
+  transition: fill 0.3s ease;
+}
+.dark-theme .my-social-media a:hover, .dark-theme .my-social-media a:focus {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(206, 191, 20, 0.598);
+}
+.dark-theme .my-social-media a:hover svg, .dark-theme .my-social-media a:focus svg {
+  fill: #000;
 }/*# sourceMappingURL=Header.css.map */

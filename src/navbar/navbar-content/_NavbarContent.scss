@@ -4,6 +4,7 @@
     display: flex;
     gap: 15px;
     justify-content: flex-end;
+    align-items: center;
     padding: 25px;
     width: 100%;
     li {
@@ -25,19 +26,22 @@
           z-index: -1;
           transition: height 0.5s ease;
         }
-        /* &::after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          transform: translateY(-100%);
-          transform: translateX(5%);
-          background-color: #808080;
-          width: 90%;
-          height: 2px;
-        } */
         &:hover::before {
           height: 100%;
+        }
+      }
+    }
+    .theme {
+      padding: .2em;
+      width: auto;
+      &__light,
+      &__dark {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        svg {
+          width: 25px;
+          fill: #555;
         }
       }
     }

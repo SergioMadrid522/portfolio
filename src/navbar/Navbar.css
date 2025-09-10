@@ -2,6 +2,7 @@
   display: flex;
   gap: 15px;
   justify-content: flex-end;
+  align-items: center;
   padding: 25px;
   width: 100%;
 }
@@ -12,17 +13,6 @@
 .navbar-content ul li a {
   position: relative;
   padding: 5px;
-  /* &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(-100%);
-    transform: translateX(5%);
-    background-color: #808080;
-    width: 90%;
-    height: 2px;
-  } */
 }
 .navbar-content ul li a::before {
   content: "";
@@ -39,6 +29,19 @@
 .navbar-content ul li a:hover::before {
   height: 100%;
 }
+.navbar-content ul .theme {
+  padding: 0.2em;
+  width: auto;
+}
+.navbar-content ul .theme__light, .navbar-content ul .theme__dark {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navbar-content ul .theme__light svg, .navbar-content ul .theme__dark svg {
+  width: 25px;
+  fill: #555;
+}
 
 .global-navbar {
   position: sticky;
@@ -46,4 +49,29 @@
   background-color: white;
   z-index: 1000;
   border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.light-theme {
+  transition: all 0.3s ease-out;
+}
+.light-theme ul {
+  color: #2d2c2c;
+}
+.light-theme .theme__light, .light-theme .theme__dark {
+  fill: #555;
+}
+
+.dark-theme {
+  transition: all 0.3s ease-in;
+  background-color: #2d2c2c;
+  border-bottom: 1px solid #2d2c2c;
+}
+.dark-theme a {
+  color: #fff;
+}
+.dark-theme a::before {
+  background-color: rgba(206, 191, 20, 0.5490196078) !important;
+}
+.dark-theme .theme__light svg, .dark-theme .theme__dark svg {
+  fill: #cebf14 !important;
 }/*# sourceMappingURL=Navbar.css.map */

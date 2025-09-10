@@ -6,3 +6,39 @@
   place-content: center;
   padding: 50px 0;
 }
+.light-theme {
+  h1,
+  h3 {
+    color: #222;
+  }
+}
+.dark-theme {
+  h1,
+  h3 {
+    color: #fff !important;
+  }
+  .my-social-media {
+    a {
+      background-color: #cebf148c !important;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(206, 191, 20, 0.4);
+      svg {
+        fill: #212020;
+        width: 24px;
+        transition: fill 0.3s ease;
+      }
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(206, 191, 20, 0.598);
+        svg {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
