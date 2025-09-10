@@ -3,7 +3,7 @@ import ProjectSection from "./project-section/ProjectSection";
 import TechSection from "./tech-section/TechSection";
 import ToolsSection from "./tools-section/ToolsSection";
 import { projects, stack, tools } from "./data.ts";
-import { useTheme } from "../navbar/navbar-content/HandleClick.tsx";
+import { useTheme } from "../navbar/navbar-content/HandleClick";
 
 import "./Main.css";
 import Aboutme from "./about-me/AboutMe.tsx";

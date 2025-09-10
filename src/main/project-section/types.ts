@@ -1,4 +1,5 @@
 type ProjectItems = {
+  id: number;
   img: string;
   imageAlt: string;
   projectName: string;

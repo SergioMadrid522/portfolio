@@ -1,4 +1,4 @@
-import { useTheme } from "./HandleClick.tsx";
+import { useTheme } from "./HandleClick";
 import type { NavbarContentProps } from "./types.ts";
 
 function NavbarContent({ menu }: NavbarContentProps) {
