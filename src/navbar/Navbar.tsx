@@ -1,6 +1,6 @@
 import NavbarContent from "./navbar-content/NavbarContent";
 import { items } from "./navbarData";
-import { useTheme } from "./navbar-content/handleClick";
+import { useTheme } from "./navbar-content/HandleClick";
 import "./Navbar.css";
 
 function Navbar() {
