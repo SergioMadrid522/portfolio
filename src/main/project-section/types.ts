@@ -8,11 +8,11 @@ type ProjectItems = {
     svg: string;
     viewbox: string;
   }[];
-  toolsUsed: {
+  /* toolsUsed: {
     svg: string;
     viewbox: string;
     color: string;
-  }[];
+  }[]; */
   colors: string[];
   projectLink: string;
   code: string;

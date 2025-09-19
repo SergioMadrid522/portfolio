@@ -44,7 +44,7 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                       </li>
                     ))}
                   </ul>
-                  {item.toolsUsed.some(
+{/*                   {item.toolsUsed.some(
                     (tool) =>
                       typeof tool.svg === "string" &&
                       tool.svg.trim().startsWith("M")
@@ -75,7 +75,7 @@ function ProjectSection({ projects }: ProjectSectionProps) {
                         })}
                       </ul>
                     </div>
-                  )}
+                  )} */}
 
                   <div className="see-project">
                     <a
