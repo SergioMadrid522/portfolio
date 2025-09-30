@@ -22,7 +22,7 @@ function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
         <img src={myPicture} alt="A picture of Sergio Acuña" loading="lazy" />
       </div>
       <div className="my-description-details">
-        <h1>Frontend Developer</h1>
+        <h1>Full-Stack Web Developer</h1>
         <h3>Sergio Fabian Acuña Madrid</h3>
         <div className="my-social-media">
           <ul>
