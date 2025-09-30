@@ -22,6 +22,18 @@
   transition: all 0.3s ease-in;
   background-color: #2d2c2c;
   border-bottom: 1px solid #2d2c2c;
+  .navbar-content {
+    background-color: #121212 !important;
+    .side-menu-btn {
+      button {
+        svg {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
   a {
     color: #fff;
     &::before {

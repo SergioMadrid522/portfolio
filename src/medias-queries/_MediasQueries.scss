@@ -148,14 +148,30 @@
 
 @media screen and (max-width: 767px) {
   .global-navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
     .navbar-content {
+      background-color: #fff;
+      position: absolute;
+      top: 95%;
+      left: 0;
+      width: 100%;
+      height: 17em;
+      max-height: 0;
+      overflow: hidden;
+      overflow-y: auto;
+      transition: all 0.35s ease-in-out;
       ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
         padding: 20px;
-
+        font-size: 1.25em;
         li {
           font-size: 1.09em;
           font-weight: 600;
@@ -165,6 +181,23 @@
             padding: 0;
           }
         }
+      }
+      //backdrop-filter: blur(2px) brightness(20%);
+    }
+    .active {
+      opacity: 1;
+      max-height: 1000px;
+    }
+    .phone-logo {
+      display: block;
+    }
+    .side-menu-btn {
+      button {
+        background-color: transparent;
+        border: none;
+        display: block;
+        fill: #555;
+        width: 4.5em;
       }
     }
   }

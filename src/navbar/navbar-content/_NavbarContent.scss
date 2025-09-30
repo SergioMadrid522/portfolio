@@ -1,5 +1,8 @@
 .navbar-content {
-  //margin: 0 20px;
+  /*margin: 0 20px;
+  display: flex;
+  align-items: center; */
+
   ul {
     display: flex;
     gap: 15px;
@@ -13,7 +16,6 @@
       a {
         position: relative;
         padding: 5px;
-
         &::before {
           content: "";
           position: absolute;
@@ -32,7 +34,7 @@
       }
     }
     .theme {
-      padding: .2em;
+      padding: 0.2em;
       width: auto;
       &__light,
       &__dark {
@@ -45,5 +47,13 @@
         }
       }
     }
+  }
+}
+.phone-logo {
+  display: none;
+}
+.side-menu-btn {
+  button {
+    display: none;
   }
 }

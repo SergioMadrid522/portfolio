@@ -3,33 +3,31 @@
     color: #fff;
     text-align: center;
   }
-  nav {
+  .navbar-content {
+    background-color: red;
     background: transparent;
     border-bottom: none;
     position: static;
     z-index: initial;
     scroll-behavior: unset;
-    div {
-      margin: 0;
-      text-align: center;
-      ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        gap: 12px;
-        li {
-          list-style: none;
-        }
-        a {
-          color: #ddd;
-          text-decoration: none;
-          padding: 6px 0;
-          font-weight: 500;
-          transition: color 0.3s ease;
-          &:hover {
-            color: #ffcc00;
-            text-decoration: underline;
-          }
+    text-align: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      gap: 12px;
+      li {
+        list-style: none;
+      }
+      a {
+        color: #ddd;
+        text-decoration: none;
+        padding: 6px 0;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #ffcc00;
+          text-decoration: underline;
         }
       }
     }
