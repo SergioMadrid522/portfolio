@@ -1,17 +1,15 @@
+/* styles */
+import "../styles/header/Header.css";
+/* component */
 import HeaderContent from "./header-content/HeaderContent";
-import { socialMedia } from "./data.ts";
-
-import "./Header.css";
-import { useTheme } from "../navbar/navbar-content/HandleClick";
+/* hooks */
+import { useTheme } from "../hooks/HandleClick.tsx";
 
 function Header() {
   const { light } = useTheme();
   return (
-    <header
-      className={`my-description ${light ? "light-theme" : "dark-theme"}`}
-      id="home"
-    >
-      <HeaderContent socialMedia={socialMedia} />
+    <header className={`my-description ${light ? "dark-theme" : ""}`} id="home">
+      <HeaderContent />
     </header>
   );
 }

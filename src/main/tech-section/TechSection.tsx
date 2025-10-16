@@ -1,4 +1,7 @@
-import type { TechSectionProps } from "./types.ts";
+/* types */
+import type { TechSectionProps } from "../../types.ts";
+/* components */
+import TechContent from "./TechContent";
 
 function TechSection({ stack }: TechSectionProps) {
   return (
@@ -8,23 +11,8 @@ function TechSection({ stack }: TechSectionProps) {
       id="tech-Tools"
     >
       <h2>Tech Stack</h2>
-      <div className="tech-content">
-        <ul role="list">
-          {stack.map((item, index) => (
-            <li key={index} aria-label={item.name}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox={item.viewbox}
-                role="img"
-                aria-label={item.name}
-              >
-                <path fillRule="evenodd" fill={item.color} d={item.svg} />
-              </svg>
-              <p>{item.name}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+
+      <TechContent stack={stack} />
     </section>
   );
 }

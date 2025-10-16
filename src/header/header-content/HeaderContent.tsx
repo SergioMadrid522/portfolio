@@ -1,55 +1,18 @@
-import type { HeaderContentProps } from "./types.ts";
-import CV from "../../assets/cv/Sergio_Acuna_CV.pdf";
+/* assets */
 import myPicture from "../../assets/myPicture.webp";
-import "../Header.css";
+/* data */
+import { socialMedia } from "../../data.ts";
+/* components */
+import HeaderDetails from "./HeaderDetails";
 
-function HeaderContent({ socialMedia }: { socialMedia: HeaderContentProps }) {
-  const handleDownloadCV = () => {
-    const url = CV;
-    const nombreArchivo = "Sergio_Fabian_CV.pdf";
-
-    const link = document.createElement("a");
-    link.href = url;
-    link.setAttribute("download", nombreArchivo);
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  };
-
+function HeaderContent() {
   return (
     <div className="my-description-content">
       <div className="my-image">
-        <img src={myPicture} alt="A picture of Sergio Acuña" loading="lazy" />
+        <img src={myPicture} alt="A picture of Sergio Acuña" loading="eager" />
       </div>
-      <div className="my-description-details">
-        <h1>Full-Stack Web Developer</h1>
-        <h3>Sergio Fabian Acuña Madrid</h3>
-        <div className="my-social-media">
-          <ul>
-            {socialMedia.map((item, index) => (
-              <li key={index}>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Link to social media`}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill={item.color}
-                    viewBox="0 0 16 16"
-                  >
-                    <path d={item.icon} />
-                  </svg>
-                </a>
-              </li>
-            ))}
-          </ul>
-          <button className="download-cv" onClick={handleDownloadCV}>
-            Download CV
-          </button>
-        </div>
-      </div>
+
+      <HeaderDetails socialMedia={socialMedia} />
     </div>
   );
 }

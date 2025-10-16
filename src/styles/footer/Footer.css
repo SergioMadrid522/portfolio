@@ -1,0 +1,70 @@
+.global-footer {
+  background-color: #121212;
+  color: #ddd;
+  border-top: 1px solid #333;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+.global-footer .footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.global-footer h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.global-footer .resources-content h3 {
+  color: #fff;
+}
+.global-footer .resources-content .resources-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.global-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.global-footer .explore-content h3 {
+  color: #fff;
+  text-align: center;
+}
+.global-footer .explore-content .navbar-content {
+  background-color: red;
+  background: transparent;
+  border-bottom: none;
+  position: static;
+  z-index: initial;
+  scroll-behavior: unset;
+  text-align: center;
+}
+.global-footer .explore-content .navbar-content ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+.global-footer .explore-content .navbar-content ul li {
+  list-style: none;
+}
+.global-footer .explore-content .navbar-content ul a {
+  color: #ddd;
+  text-decoration: none;
+  padding: 6px 0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.global-footer .explore-content .navbar-content ul a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}/*# sourceMappingURL=Footer.css.map */

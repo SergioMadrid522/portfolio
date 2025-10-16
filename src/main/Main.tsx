@@ -1,17 +1,20 @@
+/* styles */
+import "/src/styles/Main.scss";
+/* data */
+import { projects, stack, tools } from "../data.ts";
+/* components */
 import Contact from "./contact/Contact";
 import ProjectSection from "./project-section/ProjectSection";
 import TechSection from "./tech-section/TechSection";
 import ToolsSection from "./tools-section/ToolsSection";
-import { projects, stack, tools } from "./data.ts";
-import { useTheme } from "../navbar/navbar-content/HandleClick";
-
-import "./Main.css";
-import Aboutme from "./about-me/AboutMe.tsx";
+import Aboutme from "./about-me/AboutMe";
+/* hooks */
+import { useTheme } from "../hooks/HandleClick";
 
 function Main() {
   const { light } = useTheme();
   return (
-    <main className={`${light ? "light-theme" : "dark-theme"}`}>
+    <main className={`${light ? "dark-theme" : ""}`}>
       <div className="main-content">
         <Aboutme />
         <ProjectSection projects={projects} />

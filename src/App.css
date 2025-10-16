@@ -5,7 +5,12 @@
   font-family: "Monserrat", sans-serif;
   /* outline: 1px solid red; */
 }
+
 a {
   color: #2d2c2c;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,4 +1,4 @@
-import type { NavbarContentProps } from "../../../navbar/navbar-content/types.ts";
+import type { NavbarContentProps } from "../../../types";
 
 function Explore({ menu }: NavbarContentProps) {
   return (
@@ -6,9 +6,9 @@ function Explore({ menu }: NavbarContentProps) {
       <h3>Explore</h3>
       <nav className="navbar-content">
         <ul>
-          {menu.map((menu, index) => (
-            <li key={index}>
-              <a href={menu.link}>{menu.name}</a>
+          {menu.map(({ link, name }) => (
+            <li key={name}>
+              <a href={link}>{name}</a>
             </li>
           ))}
         </ul>

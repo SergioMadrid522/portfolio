@@ -1,6 +1,9 @@
-import { items } from "../../navbar/navbarData";
+/* data */
+import { items } from "../../data.ts";
+/* components */
 import Explore from "./explore-content/Explore";
 import ResourcesContent from "./resources-content/ResourcesContent";
+
 function FooterContent() {
   return (
     <div className="footer-content">

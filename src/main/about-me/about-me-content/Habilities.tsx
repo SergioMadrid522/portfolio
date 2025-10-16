@@ -1,12 +1,14 @@
-import type { props } from "../type.ts";
+/* types */
+import type { HabilitiesProps } from "../../../types.ts";
 
-function Habilities({ about, skills, languages, learning }: props) {
+function Habilities({ about, skills, languages, learning }: HabilitiesProps) {
   return (
     <div className="habilities">
       <div className="me">
         <h3>WHO AM I?</h3>
         <p>{about}</p>
       </div>
+
       <div className="soft-skills">
         <h3>SOFT SKILLS</h3>
         <ul>
@@ -15,6 +17,7 @@ function Habilities({ about, skills, languages, learning }: props) {
           ))}
         </ul>
       </div>
+
       <div className="languages">
         <h3>What languages do I speak?</h3>
         <ul>
@@ -23,6 +26,7 @@ function Habilities({ about, skills, languages, learning }: props) {
           ))}
         </ul>
       </div>
+
       <div className="learning">
         <h3>WHAT AM I CURRENTLY LEARNING?</h3>
         <ul>

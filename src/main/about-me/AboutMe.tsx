@@ -1,5 +1,8 @@
+/* data */
+import { habilities } from "../../data.ts";
+/* components */
 import Habilities from "./about-me-content/Habilities";
-import { habilities } from "../data.ts";
+
 function AboutMe() {
   return (
     <section
@@ -8,6 +11,7 @@ function AboutMe() {
       id="about-me"
     >
       <h2>About me</h2>
+
       <Habilities {...habilities} />
     </section>
   );
