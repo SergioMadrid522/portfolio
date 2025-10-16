@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import App from "./App.tsx";
-import { ThemeProvider } from "./hooks/HandleClick.tsx";
+import { ThemeProvider } from "./contexts/HandleClick.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

@@ -1,5 +1,5 @@
 /* hooks */
-import { useTheme } from "../../hooks/HandleClick";
+import { useTheme } from "../../contexts/HandleClick";
 
 function ThemeButtons() {
   const { toggleTheme } = useTheme();

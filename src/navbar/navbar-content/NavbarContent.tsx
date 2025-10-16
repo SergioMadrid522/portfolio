@@ -4,14 +4,14 @@ import { useState } from "react";
 import type { NavbarContentProps } from "../../types.ts";
 /* components */
 import NavbarMenu from "./NavbarMenu.tsx";
-import SideMenuBtn from "./SideMenu.tsx";
+import SideMenuBtn from "./SideMenu";
 
 function NavbarContent({ menu }: NavbarContentProps) {
   const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(!open);
   return (
     <>
-      <div className="phone-logo">
+      <div className="welcome">
         <h1>Welcome to my portfolio :)</h1>
       </div>
 

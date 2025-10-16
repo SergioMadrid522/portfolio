@@ -9,7 +9,7 @@ import TechSection from "./tech-section/TechSection";
 import ToolsSection from "./tools-section/ToolsSection";
 import Aboutme from "./about-me/AboutMe";
 /* hooks */
-import { useTheme } from "../hooks/HandleClick";
+import { useTheme } from "../contexts/HandleClick.tsx";
 
 function Main() {
   const { light } = useTheme();

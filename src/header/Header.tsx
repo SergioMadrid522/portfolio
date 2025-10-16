@@ -3,7 +3,7 @@ import "../styles/header/Header.css";
 /* component */
 import HeaderContent from "./header-content/HeaderContent";
 /* hooks */
-import { useTheme } from "../hooks/HandleClick.tsx";
+import { useTheme } from "../contexts/HandleClick.tsx";
 
 function Header() {
   const { light } = useTheme();
