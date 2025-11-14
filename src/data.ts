@@ -185,7 +185,7 @@ export const projects = [
       },
     ],
     colors: ["#61DAFB", "#f0db4f", "#3c873a", "#333", "#336791", "#F1502F"],
-    projectLink: "#",
+    projectLink: "https://tu-chef-inteligente.netlify.app",
     code: "https://github.com/SergioMadrid522/tu-chef-virtual",
   },
   //photography-blog

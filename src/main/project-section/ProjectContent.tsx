@@ -50,12 +50,7 @@ function ProjectContent({ projects }: ProjectSectionProps) {
               <a href={code} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a
-                href={projectLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={id === 3 ? "cms-missing" : ""}
-              >
+              <a href={projectLink} target="_blank" rel="noopener noreferrer">
                 See me working!
               </a>
             </div>
