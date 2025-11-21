@@ -229,7 +229,7 @@ export const projects = [
   }, */
   //chefInteligente
   //photography-blog
-  {
+  /*   {
     id: 4,
     img: fabianGallery,
     imageAlt: "Fabian Gallery",
@@ -261,7 +261,7 @@ export const projects = [
     colors: ["#61DAFB", "#007acc", "#cd6799"],
     projectLink: "https://fabian-gallery.netlify.app",
     code: "https://github.com/SergioMadrid522/photographyBlog",
-  },
+  }, */
   //E-commerce
   /* {
     id: 4,
