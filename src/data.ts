@@ -48,7 +48,7 @@ export const habilities = {
 };
 
 export const projects = [
-  //chat in real time
+  //chatbot de la dip. ursula
   {
     id: 1,
     img: proyectoUrsula,
@@ -79,7 +79,7 @@ export const projects = [
     ],
     colors: ["#61DAFB", "#007acc", "#cd6799", "#4285F4"],
     projectLink: "https://ursula-chatbot.netlify.app",
-    code: "https://github.com/SergioMadrid522/proyectoUrsula",
+    code: "",
   },
   {
     id: 2,

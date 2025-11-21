@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* ==============================
-   HEADER (Componente <Header />)
-============================== */
 .my-description {
   scroll-margin-top: 70px;
   overscroll-behavior: none;
@@ -10,9 +7,6 @@
   padding: 50px 0;
 }
 
-/* ==============================
-   THEMES (Manejados con useTheme)
-============================== */
 .light-theme h1,
 .light-theme h3 {
   color: #222;
@@ -47,9 +41,6 @@
   fill: #000;
 }
 
-/* ==============================
-   HEADER CONTENT (Componente <HeaderContent />)
-============================== */
 .my-description-content {
   display: flex;
   align-items: center;
@@ -70,9 +61,6 @@
      object-fit: cover;
 }
 
-/* ==============================
-   HEADER DETAILS (Componente <HeaderDetails />)
-============================== */
 .my-description-details {
   flex: 1;
   /* Redes sociales */
