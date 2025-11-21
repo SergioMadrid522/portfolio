@@ -2,7 +2,7 @@
 import type { HeaderContentProps } from "./types";
 /*---------------------------------- images ----------------------------------*/
 //import ecommerce from "../assets/img/e-commerce.png";
-import fabianGallery from "/src/assets/img/fabian-gallery-blog.webp";
+//import fabianGallery from "/src/assets/img/fabian-gallery-blog.webp";
 import chefInteligente from "/src/assets/img/chef-inteligente.webp";
 //import eventManager from "../assets/img/eventRegistrationPlatform.png";
 //import servidor from "../assets/img/servidor.png";
