@@ -78,6 +78,8 @@ export const projects = [
       },
     ],
     colors: ["#61DAFB", "#007acc", "#cd6799", "#4285F4"],
+    projectLink: "https://ursula-chatbot.netlify.app",
+    code: "https://github.com/SergioMadrid522/proyectoUrsula",
   },
   {
     id: 2,
