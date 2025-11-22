@@ -14,7 +14,7 @@ import { useTheme } from "../contexts/HandleClick.tsx";
 function Main() {
   const { light } = useTheme();
   return (
-    <main className={`${light ? "dark-theme" : ""}`}>
+    <main className={`${light ? "" : "dark-theme"}`}>
       <div className="main-content">
         <Aboutme />
         <ProjectSection projects={projects} />

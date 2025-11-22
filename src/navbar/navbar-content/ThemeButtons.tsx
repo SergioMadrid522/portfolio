@@ -6,7 +6,7 @@ function ThemeButtons() {
   const { light } = useTheme();
   return (
     <div className="theme">
-      {!light && (
+      {light && (
         <button type="button" className="theme__light" onClick={toggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ function ThemeButtons() {
         </button>
       )}
 
-      {light && (
+      {!light && (
         <button type="button" className="theme__dark" onClick={toggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 nav {
   position: sticky !important;
   top: 0;
@@ -17,9 +16,6 @@ nav .navbar-content ul {
   align-items: center;
   padding: 25px;
   width: 100%;
-  /* =====================
-     🎨 THEME BUTTONS
-  ===================== */
 }
 nav .navbar-content ul li {
   list-style: none;
@@ -28,10 +24,12 @@ nav .navbar-content ul li a {
   position: relative;
   padding: 5px;
   color: inherit;
+  display: inline-block;
   text-decoration: none;
+  z-index: 1;
 }
 nav .navbar-content ul li a::before {
-  content: "";
+  /* content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -40,10 +38,23 @@ nav .navbar-content ul li a::before {
   background-color: rgb(232, 233, 233);
   border-radius: 6px;
   z-index: -1;
-  transition: height 0.5s ease;
+  transition: height 0.5s ease; */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  background-color: rgba(201, 202, 202, 0.251);
+  border-radius: 6px;
+  transition: transform 0.35s ease;
+  z-index: 0;
 }
 nav .navbar-content ul li a:hover::before {
   height: 100%;
+  transform: scaleY(1);
 }
 nav .navbar-content ul .theme {
   padding: 0.2em;
@@ -63,22 +74,20 @@ nav .side-menu-btn button {
   display: none;
 }
 nav.dark-theme {
-  transition: all 0.3s ease-in;
-  background-color: #2d2c2c;
   border-bottom: 1px solid #2d2c2c;
 }
 nav.dark-theme .navbar-content {
-  background-color: #121212 !important;
+  background-color: #121212;
+}
+nav.dark-theme .navbar-content ul li a {
+  color: #e0e0e0 !important;
+}
+nav.dark-theme .navbar-content ul li a::before {
+  background-color: rgba(206, 191, 20, 0.2274509804) !important;
 }
 nav.dark-theme .navbar-content .side-menu-btn button svg {
   border: none;
   outline: none;
-}
-nav.dark-theme a {
-  color: #fff !important;
-}
-nav.dark-theme a::before {
-  background-color: rgba(206, 191, 20, 0.5490196078) !important;
 }
 nav.dark-theme .theme__dark svg {
   fill: #cebf14 !important;
@@ -279,6 +288,14 @@ nav.dark-theme .theme__dark svg {
 }
 .project-section .projects-container .projects__project-card:first-child a:first-child {
   display: none;
+}
+
+.dark-theme .main-content .projects__project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.dark-theme .main-content .projects__project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tech-section {

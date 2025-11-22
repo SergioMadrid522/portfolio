@@ -14,12 +14,10 @@
   flex-wrap: wrap;
 }
 .global-footer h3 {
+  color: #e0e0e0;
   font-weight: 600;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-}
-.global-footer .resources-content h3 {
-  color: #fff;
 }
 .global-footer .resources-content .resources-list {
   padding: 0;
@@ -36,7 +34,6 @@
   gap: 50px;
 }
 .global-footer .explore-content h3 {
-  color: #fff;
   text-align: center;
 }
 .global-footer .explore-content .navbar-content {

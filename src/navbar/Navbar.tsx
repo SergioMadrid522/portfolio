@@ -8,7 +8,7 @@ import NavbarContent from "./navbar-content/NavbarContent";
 function Navbar() {
   const { light } = useTheme();
   return (
-    <nav className={`${light ? "dark-theme" : ""} `}>
+    <nav className={`${light ? "" : "dark-theme"} `}>
       <NavbarContent menu={items} />
     </nav>
   );

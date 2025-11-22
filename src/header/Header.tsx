@@ -8,7 +8,7 @@ import { useTheme } from "../contexts/HandleClick.tsx";
 function Header() {
   const { light } = useTheme();
   return (
-    <header className={`my-description ${light ? "dark-theme" : ""}`} id="home">
+    <header className={`my-description ${light ? "" : "dark-theme"}`} id="home">
       <HeaderContent />
     </header>
   );
