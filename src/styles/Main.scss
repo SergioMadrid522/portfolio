@@ -17,11 +17,13 @@ main {
 
 .light-theme {
   background-color: #fff;
+  transition: all 0.25s ease-in;
 }
 
 .dark-theme {
   background-color: #121212;
   border: none;
+  transition: all 0.4s ease;
   section {
     h2,
     h3,

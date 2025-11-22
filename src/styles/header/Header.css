@@ -13,6 +13,7 @@
 }
 
 .dark-theme {
+  transition: all 0.3s ease;
   /* Estilos oscuros específicos de redes */
 }
 .dark-theme h1,

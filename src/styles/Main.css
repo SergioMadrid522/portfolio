@@ -498,11 +498,13 @@ main .main-content li {
 
 .light-theme {
   background-color: #fff;
+  transition: all 0.25s ease-in;
 }
 
 .dark-theme {
   background-color: #121212;
   border: none;
+  transition: all 0.4s ease;
 }
 .dark-theme section h2,
 .dark-theme section h3,
