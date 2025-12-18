@@ -1,5 +1,5 @@
 /* assets */
-import CV from "../../assets/cv/Sergio_Acuna_CV.pdf";
+import CV from "../../assets/cv/SergioAcunaResume.pdf";
 /* types */
 import type { HeaderContentProps } from "../../types";
 
