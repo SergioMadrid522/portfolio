@@ -37,7 +37,7 @@ export const socialMedia: HeaderContentProps = [
 /*---------------------------------- MAIN ----------------------------------*/
 export const habilities = {
   about:
-    "I'm a Software Engineering student, I love diving deep into algorithms and database design. I'm passionate about using these skills in full-stack web development to create scalable applications with a focus on clean and maintainable code.",
+    "I am a Full-Stack Developer with hands-on experience in web development, specializing in React, TypeScript, and Node.js. Actively seeking a 4 - 6-month full-time internship starting February 2026, Open to relocation.",
   skills: [
     "Problem-solving",
     "Self-motivated learner",
