@@ -41,7 +41,7 @@ export const habilities = {
     "Teamwork",
   ],
   languages: ["Spanish - Native", "English - Upper-intermediate"],
-  learning: ["Next.js", "Tailwind", "PHP", "Java"],
+  learning: ["React Native", "PHP", "Docker"],
 };
 
 export const projects = [
