@@ -98,6 +98,9 @@ nav .side-menu-btn button {
 nav.dark-theme {
   border-bottom: 1px solid #2d2c2c;
 }
+nav.dark-theme .welcome {
+  color: #fff;
+}
 nav.dark-theme .navbar-content {
   background-color: #121212;
 }
@@ -769,7 +772,8 @@ main .main-content li {
     gap: 10px;
     padding: 20px;
   }
-  nav .navbar-content ul li {
+  nav .navbar-content ul li,
+  nav .navbar-content ul button {
     font-size: 1.09em;
     font-weight: 600;
     text-align: center;
@@ -782,6 +786,9 @@ main .main-content li {
   }
   .my-description .my-description-content .my-description-details h3 {
     font-size: 1.35em;
+  }
+  .my-description .my-description-content .my-description-details p {
+    width: 100%;
   }
   .my-description .my-description-content .my-description-details .my-social-media {
     margin-top: 25px;
@@ -841,6 +848,10 @@ main .main-content li {
     scroll-margin-top: 120px;
     margin-top: 50px;
   }
+  .tech-section h2,
+  .tools-section h2 {
+    margin-bottom: 1.5em;
+  }
   .tech-section .tech-content,
   .tech-section .tools-content,
   .tools-section .tech-content,
@@ -857,8 +868,8 @@ main .main-content li {
   .tech-section .tools-content ul li svg,
   .tools-section .tech-content ul li svg,
   .tools-section .tools-content ul li svg {
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
   }
   .tech-section .tech-content ul li p,
   .tech-section .tools-content ul li p,
@@ -928,14 +939,20 @@ main .main-content li {
     padding: 20px;
     font-size: 1.25em;
   }
-  nav .navbar-content ul li {
-    font-size: 1.09em;
+  nav .navbar-content ul li,
+  nav .navbar-content ul button {
+    font-size: 1.14em !important;
     font-weight: 600;
     text-align: center;
   }
-  nav .navbar-content ul li a {
+  nav .navbar-content ul li a,
+  nav .navbar-content ul button a {
     display: block;
     padding: 0;
+    margin-bottom: 0.47em;
+  }
+  nav .navbar-content ul .theme button svg {
+    width: 35px;
   }
   nav .navbar-content.active {
     opacity: 1;
@@ -944,12 +961,15 @@ main .main-content li {
   nav .welcome {
     display: block;
   }
+  nav .welcome h1 {
+    font-size: 1.6em;
+  }
   nav .side-menu-btn button {
     background-color: transparent;
     border: none;
     display: block;
     fill: #555;
-    width: 4.5em;
+    width: 4em;
   }
   nav.dark-theme {
     background-color: #121212;
@@ -960,9 +980,17 @@ main .main-content li {
   .my-description .my-description-content {
     flex-direction: column;
     text-align: center;
+    padding: 2em 0.3em;
+    gap: 10px;
+  }
+  .my-description .my-description-content .my-description-details {
+    width: 100%;
   }
   .my-description .my-description-content .my-description-details h3 {
     font-size: 1.35em;
+  }
+  .my-description .my-description-content .my-description-details p {
+    width: 100%;
   }
   .my-description .my-description-content .my-description-details .my-social-media {
     margin-top: 25px;
@@ -1032,6 +1060,12 @@ main .main-content li {
   .tools-section .tools-content {
     padding: 15px 0;
   }
+  .tech-section .tech-content .titles,
+  .tech-section .tools-content .titles,
+  .tools-section .tech-content .titles,
+  .tools-section .tools-content .titles {
+    font-size: 1.25rem;
+  }
   .tech-section .tech-content ul,
   .tech-section .tools-content ul,
   .tools-section .tech-content ul,
@@ -1042,8 +1076,8 @@ main .main-content li {
   .tech-section .tools-content ul li svg,
   .tools-section .tech-content ul li svg,
   .tools-section .tools-content ul li svg {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
   }
   .tech-section .tech-content ul li p,
   .tech-section .tools-content ul li p,
@@ -1054,6 +1088,9 @@ main .main-content li {
   .contact-section {
     scroll-margin-top: 120px;
     margin-top: 50px;
+  }
+  .contact-section h2 {
+    margin-bottom: 1rem;
   }
   .contact-section .contact-content p {
     font-size: 1.2em;

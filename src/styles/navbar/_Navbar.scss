@@ -109,6 +109,9 @@ nav {
   }
   &.dark-theme {
     border-bottom: 1px solid #2d2c2c;
+    .welcome {
+      color: #fff;
+    }
     .navbar-content {
       background-color: #121212;
       ul {

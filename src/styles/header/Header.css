@@ -1,12 +1,17 @@
+/* * {
+  outline: 1px solid red;
+} */
 .my-description {
   scroll-margin-top: 70px;
   overscroll-behavior: none;
   display: flex;
+  flex-wrap: wrap;
   place-content: center;
   padding: 50px 0;
 }
 .my-description .my-description-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 40px;
   padding: 30px;

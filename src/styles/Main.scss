@@ -148,7 +148,8 @@ main {
         display: flex;
         gap: 10px;
         padding: 20px;
-        li {
+        li,
+        button {
           font-size: 1.09em;
           font-weight: 600;
           text-align: center;
@@ -164,6 +165,9 @@ main {
       .my-description-details {
         h3 {
           font-size: 1.35em;
+        }
+        p {
+          width: 100%;
         }
         .my-social-media {
           margin-top: 25px;
@@ -230,7 +234,9 @@ main {
   .tools-section {
     scroll-margin-top: 120px;
     margin-top: 50px;
-
+    h2 {
+      margin-bottom: 1.5em;
+    }
     .tech-content,
     .tools-content {
       padding: 15px 0;
@@ -238,8 +244,8 @@ main {
         gap: 30px;
         li {
           svg {
-            width: 60px;
-            height: 60px;
+            width: 35px;
+            height: 35px;
           }
           p {
             font-size: 1.2em;
@@ -313,13 +319,23 @@ main {
         gap: 15px;
         padding: 20px;
         font-size: 1.25em;
-        li {
-          font-size: 1.09em;
+
+        li,
+        button {
+          font-size: 1.14em !important;
           font-weight: 600;
           text-align: center;
           a {
             display: block;
             padding: 0;
+            margin-bottom: 0.47em;
+          }
+        }
+        .theme {
+          button {
+            svg {
+              width: 35px;
+            }
           }
         }
       }
@@ -331,6 +347,9 @@ main {
 
     .welcome {
       display: block;
+      h1 {
+        font-size: 1.6em;
+      }
     }
     .side-menu-btn {
       button {
@@ -338,7 +357,7 @@ main {
         border: none;
         display: block;
         fill: #555;
-        width: 4.5em;
+        width: 4em;
       }
     }
     &.dark-theme {
@@ -351,9 +370,15 @@ main {
     .my-description-content {
       flex-direction: column;
       text-align: center;
+      padding: 2em 0.3em;
+      gap: 10px;
       .my-description-details {
+        width: 100%;
         h3 {
           font-size: 1.35em;
+        }
+        p {
+          width: 100%;
         }
         .my-social-media {
           margin-top: 25px;
@@ -426,16 +451,18 @@ main {
   .tools-section {
     scroll-margin-top: 80px;
     margin-top: 50px;
-
     .tech-content,
     .tools-content {
       padding: 15px 0;
+      .titles {
+        font-size: 1.25rem;
+      }
       ul {
         gap: 30px;
         li {
           svg {
-            width: 60px;
-            height: 60px;
+            width: 45px;
+            height: 45px;
           }
           p {
             font-size: 1.2em;
@@ -448,6 +475,9 @@ main {
   .contact-section {
     scroll-margin-top: 120px;
     margin-top: 50px;
+    h2 {
+      margin-bottom: 1rem;
+    }
     .contact-content {
       p {
         font-size: 1.2em;
