@@ -1,10 +1,6 @@
-/* types */
-import type { ProjectSectionProps } from "../../types.ts";
-/* components */
 import ProjectContent from "./ProjectContent";
 
-function ProjectSection({ projects }: ProjectSectionProps) {
-  //const { light } = useTheme();
+function ProjectSection() {
   return (
     <section
       className="project-section"
@@ -14,7 +10,7 @@ function ProjectSection({ projects }: ProjectSectionProps) {
       <h2>Projects</h2>
 
       <div className="projects-container">
-        <ProjectContent projects={projects} />
+        <ProjectContent />
       </div>
     </section>
   );

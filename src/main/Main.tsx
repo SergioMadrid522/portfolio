@@ -1,8 +1,4 @@
-/* styles */
 import "/src/styles/Main.scss";
-/* data */
-import { projects, stack, tools } from "../data.ts";
-/* components */
 import Contact from "./contact/Contact";
 import ProjectSection from "./project-section/ProjectSection";
 import TechSection from "./tech-section/TechSection";
@@ -16,10 +12,10 @@ function Main() {
   return (
     <main className={`${light ? "" : "dark-theme"}`}>
       <div className="main-content">
+        <ProjectSection />
         <Aboutme />
-        <ProjectSection projects={projects} />
-        <TechSection stack={stack} />
-        <ToolsSection tools={tools} />
+        <TechSection />
+        <ToolsSection />
         <Contact />
       </div>
     </main>

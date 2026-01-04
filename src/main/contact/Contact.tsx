@@ -9,9 +9,8 @@ function Contact() {
       id="contact"
     >
       <h2 id="contact-heading">Contact me</h2>
+
       <ContactContent />
-      {/* <h3>or send me a email directly from here :)</h3>
-       <ContactForm /> */}
     </section>
   );
 }

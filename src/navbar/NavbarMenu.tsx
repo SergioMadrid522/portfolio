@@ -1,21 +1,20 @@
-/* types */
-import type { NavbarMenuProps } from "../../types";
-import DownloadCv from "./DownloadCV";
-/* components */
+import DownloadCv from "../utils/DownloadCv";
 import ThemeButtons from "./ThemeButtons";
+import { navbarLinks } from "../data";
+import type { NavbarMenuProps } from "../types";
 
-function NavbarMenu({ menu, open, setOpen }: NavbarMenuProps) {
+function NavbarMenu({ open, setOpen }: NavbarMenuProps) {
   return (
     <div className={`navbar-content ${open ? "active" : ""}`}>
       <ul>
         <li>
-          {menu.map(({ link, name }) => (
+          {navbarLinks.map(({ name, link }) => (
             <a key={name} href={link} onClick={() => setOpen(false)}>
               {name}
             </a>
           ))}
+          <DownloadCv />
         </li>
-        <DownloadCv />
         <ThemeButtons />
       </ul>
     </div>

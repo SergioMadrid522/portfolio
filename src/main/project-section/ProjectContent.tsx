@@ -1,9 +1,7 @@
-/* types */
-import type { ProjectSectionProps } from "../../types";
-/* components */
+import { projects } from "../../data";
 import ProjectTechStack from "./ProjectTechStack";
 
-function ProjectContent({ projects }: ProjectSectionProps) {
+function ProjectContent() {
   return (
     <div className="projects">
       {projects.map(

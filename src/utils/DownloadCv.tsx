@@ -1,4 +1,4 @@
-import CV from "../../assets/cv/SergioAcunaResume.pdf";
+import CV from "../assets/cv/SergioAcunaResume.pdf";
 
 export default function DownloadCv() {
   const handleDownloadCV = () => {

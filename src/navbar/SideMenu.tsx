@@ -1,5 +1,5 @@
 /* types */
-import type { SideMenuBtnProps } from "../../types";
+import type { SideMenuBtnProps } from "../types";
 
 function SideMenuBtn({ open, handleClick }: SideMenuBtnProps) {
   return (

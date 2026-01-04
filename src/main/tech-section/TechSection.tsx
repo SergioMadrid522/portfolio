@@ -1,9 +1,6 @@
-/* types */
-import type { TechSectionProps } from "../../types.ts";
-/* components */
 import TechContent from "./TechContent";
 
-function TechSection({ stack }: TechSectionProps) {
+function TechSection() {
   return (
     <section
       className="tech-section"
@@ -12,7 +9,7 @@ function TechSection({ stack }: TechSectionProps) {
     >
       <h2>Tech Stack</h2>
 
-      <TechContent stack={stack} />
+      <TechContent />
     </section>
   );
 }

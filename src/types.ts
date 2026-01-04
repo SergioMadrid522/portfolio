@@ -4,7 +4,7 @@ type menuContent = {
   name: string;
 };
 
-export type NavbarContentProps = {
+export type FooterProps = {
   menu: menuContent[];
 };
 
@@ -14,7 +14,6 @@ export type SideMenuBtnProps = {
 };
 
 export type NavbarMenuProps = {
-  menu: menuContent[];
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };

@@ -18,14 +18,12 @@ nav {
       align-items: center;
       padding: 25px;
       width: 100%;
-
       li {
         list-style: none;
-
         a {
           position: relative;
           padding: 5px;
-          color: inherit;
+          //color: inherit;
           display: inline-block;
           text-decoration: none;
           z-index: 1;
@@ -49,42 +47,41 @@ nav {
             transform: scaleY(1);
           }
         }
-      }
-      .download-cv {
-        position: relative;
-        cursor: pointer;
-        color: #000 !important;
-        font-size: 1.09em;
-        font-weight: 600;
-        border: none;
-        background-color: transparent;
-        width: fit-content;
-        color: white;
-        padding: 5px;
-        font-weight: 600;
-        font-size: 1rem;
-        border-radius: 6px;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-          transform: scaleY(0);
-          transform-origin: bottom;
-          background-color: rgba(201, 202, 202, 0.251);
+        .download-cv {
+          position: relative;
+          cursor: pointer;
+          font-size: 1.09em;
+          color: #2d2c2c !important;
+          border: none;
+          background-color: transparent;
+          width: fit-content;
+          color: white;
+          padding: 5px;
+          font-size: 1rem;
           border-radius: 6px;
-          transition: transform 0.35s ease;
-          z-index: 0;
-        }
+          transition: background-color 0.3s ease, box-shadow 0.3s ease;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            background-color: rgba(201, 202, 202, 0.251);
+            border-radius: 6px;
+            transition: transform 0.35s ease;
+            z-index: 0;
+          }
 
-        &:hover::before {
-          height: 100%;
-          transform: scaleY(1);
+          &:hover::before {
+            height: 100%;
+            transform: scaleY(1);
+          }
         }
       }
+
       .theme {
         padding: 0.2em;
         width: auto;
@@ -116,17 +113,12 @@ nav {
       background-color: #121212;
       ul {
         li {
-          a {
+          a,
+          button {
             color: #e0e0e0 !important;
             &::before {
               background-color: #cebf143a !important;
             }
-          }
-        }
-        button {
-          color: #e0e0e0 !important;
-          &::before {
-            background-color: #cebf143a !important;
           }
         }
       }

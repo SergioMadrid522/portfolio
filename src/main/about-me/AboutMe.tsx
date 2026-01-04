@@ -1,7 +1,4 @@
-/* data */
-import { habilities } from "../../data.ts";
-/* components */
-import Habilities from "./about-me-content/Habilities";
+import Habilities from "./Habilities";
 
 function AboutMe() {
   return (
@@ -12,7 +9,7 @@ function AboutMe() {
     >
       <h2>About me</h2>
 
-      <Habilities {...habilities} />
+      <Habilities />
     </section>
   );
 }

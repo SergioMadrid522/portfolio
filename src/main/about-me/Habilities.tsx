@@ -1,14 +1,11 @@
 /* types */
-import type { HabilitiesProps } from "../../../types.ts";
 
-function Habilities({ about, skills, languages, learning }: HabilitiesProps) {
+import { habilities } from "../../data.ts";
+function Habilities() {
+  const { skills, languages, learning } = habilities;
+
   return (
     <div className="habilities">
-      <div className="me">
-        <h3>WHO AM I?</h3>
-        <p>{about}</p>
-      </div>
-
       <div className="soft-skills">
         <h3>SOFT SKILLS</h3>
         <ul>
