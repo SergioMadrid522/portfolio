@@ -1,12 +1,6 @@
 .about-me {
   scroll-margin-top: 60px;
   padding: 25px 40px;
-  h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    text-align: center;
-    color: #333;
-  }
   .habilities {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
