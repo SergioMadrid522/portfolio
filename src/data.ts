@@ -8,9 +8,10 @@ import recetario from "/src/assets/img/recetarioFamiliar.webp";
 import silentBeauty from "/src/assets/img/silentBeauty.webp";
 /*---------------------------------- NAVBAR ----------------------------------*/
 export const navbarLinks = [
-  { name: "Projects", link: "#projects" },
-  { name: "About me", link: "#about-me" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "/" },
+  { name: "Projects", link: "/#projects" },
+  { name: "About me", link: "/#about-me" },
+  { name: "Contact", link: "/#contact" },
 ];
 
 /*---------------------------------- HEADER ----------------------------------*/
@@ -40,8 +41,7 @@ export const habilities = {
   languages: ["Spanish - Native", "English - Upper-intermediate"],
   learning: ["React Native", "PHP", "Docker"],
 };
-
-export const projects = [
+export const freelanceProjects = [
   //chatbot de la dip. ursula
   {
     id: 1,
@@ -72,6 +72,8 @@ export const projects = [
     projectLink: "https://ursula-chatbot.netlify.app",
     code: "",
   },
+];
+export const projects = [
   //tu-chef-virtual
   {
     id: 2,

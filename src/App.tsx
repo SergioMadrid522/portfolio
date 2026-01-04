@@ -3,15 +3,30 @@ import Navbar from "./navbar/Navbar";
 import Header from "./header/Header";
 import Main from "./main/Main";
 import Footer from "./footer/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Header />
-      <Main />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Main />
+            </>
+          }
+        />
+
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+      </Routes>
+
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

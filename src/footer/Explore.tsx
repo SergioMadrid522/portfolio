@@ -1,12 +1,12 @@
-import type { FooterProps } from "../../../types";
+import { navbarLinks } from "../data";
 
-function Explore({ menu }: FooterProps) {
+function Explore() {
   return (
     <div className="explore-content">
       <h3>Explore</h3>
       <nav className="navbar-content">
         <ul>
-          {menu.map(({ name, link }) => (
+          {navbarLinks.map(({ name, link }) => (
             <li key={name}>
               <a href={link}>{name}</a>
             </li>

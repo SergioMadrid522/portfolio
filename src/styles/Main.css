@@ -209,11 +209,24 @@ nav.dark-theme .theme__dark svg {
   line-height: 1.5;
 }
 
+/* * {
+  outline: 1px solid red;
+} */
 .project-section {
   scroll-margin-top: 100px;
 }
-.project-section .projects-container {
-  padding: 50px;
+.project-section .titles {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.project-section .projects-container .freelance,
+.project-section .projects-container .selected-projects {
+  padding: 20px;
 }
 .project-section .projects-container .projects {
   display: flex;
@@ -222,23 +235,33 @@ nav.dark-theme .theme__dark svg {
   flex-wrap: wrap;
 }
 .project-section .projects-container .projects__project-card {
+  position: relative;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  width: 550px;
+  height: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 450px;
 }
 .project-section .projects-container .projects__project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+.project-section .projects-container .projects__project-card:hover .projects__project-card__see-project {
+  opacity: 1;
+  pointer-events: auto;
+}
+.project-section .projects-container .projects__project-card:hover img {
+  filter: brightness(0.4);
+  transform: scale(1.05);
+}
 .project-section .projects-container .projects__project-card__image {
-  width: 365px;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
   width: 100%;
+  height: 100%;
 }
 .project-section .projects-container .projects__project-card__image img {
   display: block;
@@ -247,42 +270,26 @@ nav.dark-theme .theme__dark svg {
   -o-object-position: top center;
      object-position: top center;
   width: 100%;
-  height: 200px;
-  transition: transform 0.3s ease;
-}
-.project-section .projects-container .projects__project-card__details {
-  padding: 15px;
-}
-.project-section .projects-container .projects__project-card__details h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-.project-section .projects-container .projects__project-card__details p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  width: 100%;
-  color: #555;
-}
-.project-section .projects-container .projects__project-card__details__tech-stack ul {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.project-section .projects-container .projects__project-card__details__tech-stack ul li {
-  list-style: none;
-}
-.project-section .projects-container .projects__project-card__details__tech-stack ul li svg {
-  margin: 10px 0;
-  width: 40px;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 .project-section .projects-container .projects__project-card__see-project {
+  position: absolute;
+  inset: 0;
+  width: 100%;
   display: flex;
-  place-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.project-section .projects-container .projects__project-card__see-project h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 .project-section .projects-container .projects__project-card__see-project a {
   margin-top: 15px;
@@ -311,6 +318,9 @@ nav.dark-theme .theme__dark svg {
 .dark-theme .main-content .projects__project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.dark-theme .titles {
+  color: #9ca3af;
 }
 
 .tech-section .tech-content {

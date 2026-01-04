@@ -5,7 +5,7 @@ import TechSection from "./tech-section/TechSection";
 import ToolsSection from "./tools-section/ToolsSection";
 import Aboutme from "./about-me/AboutMe";
 /* hooks */
-import { useTheme } from "../contexts/HandleClick.tsx";
+import { useTheme } from "../contexts/HandleClick";
 
 function Main() {
   const { light } = useTheme();
