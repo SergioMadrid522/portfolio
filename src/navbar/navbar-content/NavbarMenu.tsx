@@ -1,5 +1,6 @@
 /* types */
 import type { NavbarMenuProps } from "../../types";
+import DownloadCv from "./DownloadCV";
 /* components */
 import ThemeButtons from "./ThemeButtons";
 
@@ -7,14 +8,14 @@ function NavbarMenu({ menu, open, setOpen }: NavbarMenuProps) {
   return (
     <div className={`navbar-content ${open ? "active" : ""}`}>
       <ul>
-        {menu.map((menu, index) => (
-          <li key={index}>
-            <a href={menu.link} onClick={() => setOpen(false)}>
-              {menu.name}
+        <li>
+          {menu.map(({ link, name }) => (
+            <a key={name} href={link} onClick={() => setOpen(false)}>
+              {name}
             </a>
-          </li>
-        ))}
-
+          ))}
+        </li>
+        <DownloadCv />
         <ThemeButtons />
       </ul>
     </div>

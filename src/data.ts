@@ -8,11 +8,9 @@ import recetario from "/src/assets/img/recetarioFamiliar.webp";
 import silentBeauty from "/src/assets/img/silentBeauty.webp";
 /*---------------------------------- NAVBAR ----------------------------------*/
 export const items = [
-  { link: "#home", name: "Home" },
-  { link: "#about-me", name: "About me" },
   { link: "#projects", name: "Projects" },
   /* { link: "#certificates",name: "Certificates",}, */
-  { link: "#tech-Tools", name: "Stack" },
+  { link: "#about-me", name: "About me" },
   { link: "#contact", name: "Contact" },
 ];
 
