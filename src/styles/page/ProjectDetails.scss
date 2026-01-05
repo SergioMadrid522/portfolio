@@ -208,3 +208,10 @@
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
   }
 }
+@media screen and (max-width: 767px) {
+  .tech-stack {
+    ul {
+      gap: 0 !important;
+    }
+  }
+}
