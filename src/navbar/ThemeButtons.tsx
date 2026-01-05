@@ -3,10 +3,10 @@ import { useTheme } from "../contexts/HandleClick";
 
 function ThemeButtons() {
   const { toggleTheme } = useTheme();
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className="theme">
-      {light && (
+      {theme && (
         <button type="button" className="theme__light" onClick={toggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ function ThemeButtons() {
         </button>
       )}
 
-      {!light && (
+      {!theme && (
         <button type="button" className="theme__dark" onClick={toggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

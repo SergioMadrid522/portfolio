@@ -8,9 +8,9 @@ import Aboutme from "./about-me/AboutMe";
 import { useTheme } from "../contexts/HandleClick";
 
 function Main() {
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
-    <main className={`${light ? "" : "dark-theme"}`}>
+    <main className={`${theme === "dark" ? "dark-theme" : ""}`}>
       <div className="main-content">
         <ProjectSection />
         <Aboutme />

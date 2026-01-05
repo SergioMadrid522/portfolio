@@ -6,7 +6,7 @@ import { useTheme } from "../contexts/HandleClick";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
-  const { light } = useTheme();
+  const { theme } = useTheme();
 
   const project =
     freelanceProjects.find((p) => p.slug === slug) ||
@@ -27,7 +27,7 @@ export default function ProjectDetail() {
   } = project;
 
   return (
-    <main className={`project-detail ${light ? "" : "dark-theme"}`}>
+    <main className={`project-detail ${theme === "dark" ? "dark-theme" : ""}`}>
       <section className="project-header">
         <h1>{projectName}</h1>
 

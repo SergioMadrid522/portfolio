@@ -1,30 +1,43 @@
-import type {ReactNode} from "react";
-import { createContext, useContext, useState} from "react";
+import type { ReactNode } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
+type Theme = "light" | "dark";
 type ThemeContextType = {
-  light: boolean;
+  theme: Theme;
   toggleTheme: () => void;
 };
 
-// 1. Crear el contexto
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// 2. Provider: envuelve la App y maneja el estado
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [light, setLight] = useState<boolean>(true);
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window !== "undefined") {
+      return (localStorage.getItem("theme") as Theme) || "light";
+    }
+    return "light";
+  });
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme") as Theme | null;
+    if (storedTheme) setTheme(storedTheme);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.body.className = theme;
+  }, [theme]);
 
   const toggleTheme = () => {
-    setLight((prev) => !prev);
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
-    <ThemeContext.Provider value={{ light, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 }
 
-// 3. Custom hook para consumir el contexto
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {

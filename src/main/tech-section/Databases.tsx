@@ -2,7 +2,7 @@ import { useTheme } from "../../contexts/HandleClick";
 import { dataBases } from "../../data";
 
 export default function Databases() {
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className="tech-content__languages">
       <p className="titles">Databases</p>
@@ -10,7 +10,7 @@ export default function Databases() {
         {dataBases.map(({ name, color, viewbox, svg }) => (
           <li
             key={name}
-            className={`database-item ${light ? "" : "ldatabase__dark-theme"}`}
+            className={`database-item ${theme ? "" : "ldatabase__dark-theme"}`}
             style={{ "--tech-color": color } as React.CSSProperties}
           >
             <svg
@@ -24,7 +24,7 @@ export default function Databases() {
 
             <p
               className={`tools-content__name ${
-                light ? "" : "dark-theme__-name"
+                theme ? "" : "dark-theme__-name"
               }`}
             >
               {name}

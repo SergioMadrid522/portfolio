@@ -4,9 +4,11 @@ import HeaderDetails from "./HeaderDetails.tsx";
 import myPicture from "../assets/myPicture.webp";
 
 function Header() {
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
-    <header className={`my-description ${light ? "" : "dark-theme"}`}>
+    <header
+      className={`my-description ${theme === "dark" ? "dark-theme" : ""}`}
+    >
       <div className="my-description-content">
         <HeaderDetails />
 

@@ -2,7 +2,7 @@ import { useTheme } from "../../contexts/HandleClick";
 import { librariesFrameworks } from "../../data";
 
 export default function LibrariesFrameworks() {
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className="tech-content__languages">
       <p className="titles">Libraries and Frameworks</p>
@@ -11,7 +11,7 @@ export default function LibrariesFrameworks() {
           <li
             key={name}
             className={`libFrame-item ${
-              light ? "" : "libFrame-item__dark-theme"
+              theme ? "" : "libFrame-item__dark-theme"
             }`}
             style={{ "--tech-color": color } as React.CSSProperties}
           >
@@ -26,7 +26,7 @@ export default function LibrariesFrameworks() {
 
             <p
               className={`tools-content__name ${
-                light ? "" : "dark-theme__-name"
+                theme ? "" : "dark-theme__-name"
               }`}
             >
               {name}

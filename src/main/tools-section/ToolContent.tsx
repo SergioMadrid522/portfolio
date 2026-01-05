@@ -2,7 +2,7 @@ import { useTheme } from "../../contexts/HandleClick";
 import { tools } from "../../data";
 
 function ToolContent() {
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className="tools-content">
       <div>
@@ -11,7 +11,7 @@ function ToolContent() {
             <li
               key={name}
               className={`tools-content__item ${
-                light ? "" : "tool-content__dark-theme"
+                theme ? "" : "tool-content__dark-theme"
               }`}
               style={{ "--tool-color": color } as React.CSSProperties}
             >
@@ -26,7 +26,7 @@ function ToolContent() {
 
               <p
                 className={`tools-content__name ${
-                  light ? "" : "dark-theme__-name"
+                  theme ? "" : "dark-theme__-name"
                 }`}
               >
                 {name}

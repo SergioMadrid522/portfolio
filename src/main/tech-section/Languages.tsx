@@ -2,7 +2,7 @@ import { useTheme } from "../../contexts/HandleClick";
 import { languages } from "../../data";
 
 export default function Languages() {
-  const { light } = useTheme();
+  const { theme } = useTheme();
   return (
     <div>
       <p className="titles">Languages</p>
@@ -11,7 +11,7 @@ export default function Languages() {
         {languages.map(({ name, color, viewbox, svg }) => (
           <li
             key={name}
-            className={`language-item ${light ? "" : "language__dark-theme"}`}
+            className={`language-item ${theme ? "" : "language__dark-theme"}`}
             style={{ "--tech-color": color } as React.CSSProperties}
           >
             <svg

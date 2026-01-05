@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(!open);
-  const { light } = useTheme();
+  const { theme } = useTheme();
 
   return (
-    <nav className={`${light ? "" : "dark-theme"} `}>
+    <nav className={`${theme === "dark" ? "dark-theme" : ""} `}>
       <div className="welcome">
         <Link to="/">Welcome to my portfolio :)</Link>
       </div>
