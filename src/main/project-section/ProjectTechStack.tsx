@@ -2,7 +2,7 @@
 import type { ProjectTechStackProps } from "../../types";
 
 function ProjectTechStack({ project }: ProjectTechStackProps) {
-  const { techStackIcons, colors } = project;
+  const { techStackIcons } = project;
   return (
     <div className="projects__project-card__details__tech-stack">
       <h4>Tech stack:</h4>
@@ -14,7 +14,7 @@ function ProjectTechStack({ project }: ProjectTechStackProps) {
               viewBox={viewbox}
               aria-hidden="true"
             >
-              <path fillRule="evenodd" fill={colors?.[idx] || "#333"} d={svg} />
+              <path fillRule="evenodd" fill={"#333"} d={svg} />
             </svg>
           </li>
         ))}
