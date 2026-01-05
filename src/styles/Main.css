@@ -254,7 +254,7 @@ nav.dark-theme .theme__dark svg {
   pointer-events: auto;
 }
 .project-section .projects-container .projects__project-card:hover img {
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   transform: scale(1.05);
 }
 .project-section .projects-container .projects__project-card__image {
@@ -295,8 +295,8 @@ nav.dark-theme .theme__dark svg {
   margin-top: 15px;
   cursor: pointer;
   padding: 10px 18px;
-  border: none;
-  background-color: #0070f3;
+  border: 1px solid white;
+  background-color: transparent;
   color: white;
   font-weight: 600;
   font-size: 1rem;
@@ -306,7 +306,8 @@ nav.dark-theme .theme__dark svg {
   position: relative;
 }
 .project-section .projects-container .projects__project-card__see-project a:hover {
-  box-shadow: 0 0 8px rgba(0, 91, 181, 0.7);
+  color: #333;
+  background-color: #fff;
 }
 .project-section .projects-container .projects__project-card:first-child a:first-child {
   display: none;

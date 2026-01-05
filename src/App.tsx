@@ -22,7 +22,8 @@ function App() {
           }
         />
 
-        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/freelance/:slug" element={<ProjectDetail />} />
       </Routes>
 
       <Footer />

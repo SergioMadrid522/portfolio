@@ -42,7 +42,7 @@
           }
         }
         &:hover img {
-          filter: brightness(0.4);
+          filter: brightness(0.3);
           transform: scale(1.05);
         }
         &__image {
@@ -80,8 +80,8 @@
             margin-top: 15px;
             cursor: pointer;
             padding: 10px 18px;
-            border: none;
-            background-color: #0070f3;
+            border: 1px solid white;
+            background-color: transparent;
             color: white;
             font-weight: 600;
             font-size: 1rem;
@@ -91,7 +91,8 @@
             position: relative;
 
             &:hover {
-              box-shadow: 0 0 8px rgba(0, 91, 181, 0.7);
+              color: #333;
+              background-color: #fff;
             }
           }
         }

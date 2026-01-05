@@ -46,19 +46,22 @@ type TechStack = {
 export type TechSectionProps = {
   stack: TechStack[];
 };
+type TechIcon = {
+  svg: string;
+  viewbox: string;
+  color: string;
+  name: string;
+};
 
 //project section
-interface ProjectItems {
+export interface ProjectItems {
   id: number;
+  slug: string;
   img: string;
   imageAlt: string;
   projectName: string;
   projectDescription: string;
-  techStackIcons: {
-    svg: string;
-    viewbox: string;
-  }[];
-  colors: string[];
+  techStackIcons: TechIcon[];
   projectLink: string;
   code: string;
 }
@@ -77,3 +80,7 @@ export type HabilitiesProps = {
   languages: string[];
   learning: string[];
 };
+
+export interface RenderIconsProps {
+  stack: TechIcon[];
+}
