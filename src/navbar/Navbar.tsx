@@ -4,6 +4,7 @@ import { useTheme } from "../contexts/HandleClick.tsx";
 /* components */
 import NavbarMenu from "./NavbarMenu.tsx";
 import SideMenuBtn from "./SideMenu.tsx";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
   return (
     <nav className={`${light ? "" : "dark-theme"} `}>
       <div className="welcome">
-        <h1>Welcome to my portfolio :)</h1>
+        <Link to="/">Welcome to my portfolio :)</Link>
       </div>
 
       <NavbarMenu open={open} setOpen={setOpen} />

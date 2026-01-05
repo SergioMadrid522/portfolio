@@ -98,7 +98,7 @@ nav .side-menu-btn button {
 nav.dark-theme {
   border-bottom: 1px solid #2d2c2c;
 }
-nav.dark-theme .welcome {
+nav.dark-theme .welcome a {
   color: #fff;
 }
 nav.dark-theme .navbar-content {
@@ -209,9 +209,6 @@ nav.dark-theme .theme__dark svg {
   line-height: 1.5;
 }
 
-/* * {
-  outline: 1px solid red;
-} */
 .project-section {
   scroll-margin-top: 100px;
 }
@@ -792,9 +789,6 @@ main .main-content li {
   .my-description {
     padding: 0;
   }
-  .my-description .my-description-content {
-    text-align: center;
-  }
   .my-description .my-description-content .my-description-details h3 {
     font-size: 1.35em;
   }
@@ -837,6 +831,15 @@ main .main-content li {
     font-size: 1.2em;
     color: #555;
   }
+  .main-content {
+    margin: 0 !important;
+  }
+  .main-content h2 {
+    margin-bottom: 1rem;
+  }
+  .main-content .titles {
+    font-size: 1.1rem;
+  }
   .project-section {
     margin-top: 50px;
     scroll-margin-top: 110px;
@@ -844,15 +847,12 @@ main .main-content li {
   .project-section .projects-container {
     padding: 15px 0;
   }
-  .project-section .projects-container .project-details h3 {
-    font-size: 1.8em !important;
+  .project-section .projects-container .projects__project-card {
+    width: 65%;
+    height: 65%;
   }
-  .project-section .projects-container .project-details p {
-    font-size: 1.2em;
-    color: #555;
-  }
-  .project-section .projects-container .project-details h4 {
-    font-size: 1.35em;
+  .project-section .projects-container .projects__project-card__image {
+    width: 100%;
   }
   .tech-section,
   .tools-section {
@@ -972,7 +972,8 @@ main .main-content li {
   nav .welcome {
     display: block;
   }
-  nav .welcome h1 {
+  nav .welcome a {
+    font-weight: 600;
     font-size: 1.6em;
   }
   nav .side-menu-btn button {
@@ -1031,6 +1032,9 @@ main .main-content li {
     margin-top: 20px;
     scroll-margin-top: 85px;
   }
+  .about-me h2 {
+    margin-bottom: 1rem;
+  }
   .about-me .habilities {
     padding: 15px 0;
   }
@@ -1039,6 +1043,15 @@ main .main-content li {
     font-size: 1.2em;
     color: #555;
   }
+  .main-content {
+    margin: 0 !important;
+  }
+  .main-content h2 {
+    margin-bottom: 1rem;
+  }
+  .main-content .titles {
+    font-size: 1.25rem;
+  }
   .project-section {
     margin-top: 50px;
     scroll-margin-top: 110px;
@@ -1046,19 +1059,19 @@ main .main-content li {
   .project-section .projects-container {
     padding: 15px 0;
     margin: 0 auto;
+    width: 100%;
   }
   .project-section .projects-container .project:hover {
     transform: none;
   }
-  .project-section .projects-container .project .project-details h3 {
-    font-size: 1.8em !important;
+  .projects__project-card {
+    width: 100%;
   }
-  .project-section .projects-container .project .project-details p {
-    font-size: 1.2em;
-    color: #555;
+  .projects__project-card__image {
+    width: 100%;
   }
-  .project-section .projects-container .project .project-details h4 {
-    font-size: 1.35em;
+  .project-name {
+    text-align: center;
   }
   .tech-section,
   .tools-section {
@@ -1070,12 +1083,6 @@ main .main-content li {
   .tools-section .tech-content,
   .tools-section .tools-content {
     padding: 15px 0;
-  }
-  .tech-section .tech-content .titles,
-  .tech-section .tools-content .titles,
-  .tools-section .tech-content .titles,
-  .tools-section .tools-content .titles {
-    font-size: 1.25rem;
   }
   .tech-section .tech-content ul,
   .tech-section .tools-content ul,
@@ -1099,9 +1106,6 @@ main .main-content li {
   .contact-section {
     scroll-margin-top: 120px;
     margin-top: 50px;
-  }
-  .contact-section h2 {
-    margin-bottom: 1rem;
   }
   .contact-section .contact-content p {
     font-size: 1.2em;

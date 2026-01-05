@@ -161,7 +161,6 @@ main {
   .my-description {
     padding: 0;
     .my-description-content {
-      text-align: center;
       .my-description-details {
         h3 {
           font-size: 1.35em;
@@ -209,22 +208,27 @@ main {
       }
     }
   }
-
+  .main-content {
+    margin: 0 !important;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .titles {
+      font-size: 1.1rem;
+    }
+  }
   .project-section {
     margin-top: 50px;
     scroll-margin-top: 110px;
     .projects-container {
       padding: 15px 0;
-      .project-details {
-        h3 {
-          font-size: 1.8em !important;
-        }
-        p {
-          font-size: 1.2em;
-          color: #555;
-        }
-        h4 {
-          font-size: 1.35em;
+      .projects {
+        &__project-card {
+          width: 65%;
+          height: 65%;
+          &__image {
+            width: 100%;
+          }
         }
       }
     }
@@ -347,7 +351,8 @@ main {
 
     .welcome {
       display: block;
-      h1 {
+      a {
+        font-weight: 600;
         font-size: 1.6em;
       }
     }
@@ -411,6 +416,9 @@ main {
   .about-me {
     margin-top: 20px;
     scroll-margin-top: 85px;
+    h2 {
+      margin-bottom: 1rem;
+    }
     .habilities {
       padding: 15px 0;
       p,
@@ -421,42 +429,51 @@ main {
     }
   }
 
+  .main-content {
+    margin: 0 !important;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .titles {
+      font-size: 1.25rem;
+    }
+  }
   .project-section {
     margin-top: 50px;
     scroll-margin-top: 110px;
+
     .projects-container {
       padding: 15px 0;
       margin: 0 auto;
+      width: 100%;
       .project {
         &:hover {
           transform: none;
-        }
-        .project-details {
-          h3 {
-            font-size: 1.8em !important;
-          }
-          p {
-            font-size: 1.2em;
-            color: #555;
-          }
-          h4 {
-            font-size: 1.35em;
-          }
         }
       }
     }
   }
 
+  .projects {
+    &__project-card {
+      width: 100%;
+      &__image {
+        width: 100%;
+      }
+    }
+  }
+  .project-name {
+    text-align: center;
+  }
   .tech-section,
   .tools-section {
     scroll-margin-top: 80px;
     margin-top: 50px;
+
     .tech-content,
     .tools-content {
       padding: 15px 0;
-      .titles {
-        font-size: 1.25rem;
-      }
+
       ul {
         gap: 30px;
         li {
@@ -475,9 +492,7 @@ main {
   .contact-section {
     scroll-margin-top: 120px;
     margin-top: 50px;
-    h2 {
-      margin-bottom: 1rem;
-    }
+
     .contact-content {
       p {
         font-size: 1.2em;

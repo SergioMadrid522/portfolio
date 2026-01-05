@@ -110,7 +110,9 @@ nav {
   &.dark-theme {
     border-bottom: 1px solid #2d2c2c;
     .welcome {
-      color: #fff;
+      a {
+        color: #fff;
+      }
     }
     .navbar-content {
       background-color: #121212;
