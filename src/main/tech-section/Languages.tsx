@@ -5,7 +5,7 @@ export default function Languages() {
   const { light } = useTheme();
   return (
     <div>
-      <p className="titles">Languajes</p>
+      <p className="titles">Languages</p>
 
       <ul role="list">
         {languages.map(({ name, color, viewbox, svg }) => (
