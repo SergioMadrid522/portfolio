@@ -13,7 +13,7 @@ export default function LibrariesFrameworks() {
             className={`libFrame-item ${
               light ? "" : "libFrame-item__dark-theme"
             }`}
-            style={{ "--tech-color": color }}
+            style={{ "--tech-color": color } as React.CSSProperties}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

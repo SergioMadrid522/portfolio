@@ -12,7 +12,7 @@ export default function Languages() {
           <li
             key={name}
             className={`language-item ${light ? "" : "language__dark-theme"}`}
-            style={{ "--tech-color": color }}
+            style={{ "--tech-color": color } as React.CSSProperties}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

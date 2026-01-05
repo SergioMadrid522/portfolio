@@ -13,7 +13,7 @@ function ToolContent() {
               className={`tools-content__item ${
                 light ? "" : "tool-content__dark-theme"
               }`}
-              style={{ "--tool-color": color }}
+              style={{ "--tool-color": color } as React.CSSProperties}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

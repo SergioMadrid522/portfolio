@@ -11,7 +11,7 @@ export default function Databases() {
           <li
             key={name}
             className={`database-item ${light ? "" : "ldatabase__dark-theme"}`}
-            style={{ "--tech-color": color }}
+            style={{ "--tech-color": color } as React.CSSProperties}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,11 +1,19 @@
+/*---------------------------------- SHARED ----------------------------------*/
+export type TechIcon = {
+  svg: string;
+  viewbox: string;
+  name: string;
+  color?: string;
+};
+
 /*---------------------------------- NAVBAR ----------------------------------*/
-type menuContent = {
+type MenuContent = {
   link: string;
   name: string;
 };
 
 export type FooterProps = {
-  menu: menuContent[];
+  menu: MenuContent[];
 };
 
 export type SideMenuBtnProps = {
@@ -17,6 +25,7 @@ export type NavbarMenuProps = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
+
 /*---------------------------------- HEADER ----------------------------------*/
 export type HeaderContentProps = {
   link: string;
@@ -25,35 +34,17 @@ export type HeaderContentProps = {
 }[];
 
 /*---------------------------------- MAIN ----------------------------------*/
-type tools = {
-  svg: string;
-  name: string;
-  color: string;
-  viewbox: string;
-};
-//tools section
+// tools section
 export type ToolsSectionProps = {
-  tools: tools[];
-};
-//tech section
-type TechStack = {
-  svg: string;
-  name: string;
-  color: string;
-  viewbox: string;
+  tools: TechIcon[];
 };
 
+// tech section
 export type TechSectionProps = {
-  stack: TechStack[];
-};
-type TechIcon = {
-  svg: string;
-  viewbox: string;
-  color: string;
-  name: string;
+  stack: TechIcon[];
 };
 
-//project section
+/*---------------------------------- PROJECT SECTION ----------------------------------*/
 export interface ProjectItems {
   id: number;
   slug: string;
@@ -73,7 +64,8 @@ export type ProjectSectionProps = {
 export type ProjectTechStackProps = {
   project: ProjectItems;
 };
-//about me
+
+/*---------------------------------- ABOUT ----------------------------------*/
 export type HabilitiesProps = {
   about: string;
   skills: string[];
