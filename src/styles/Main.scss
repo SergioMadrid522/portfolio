@@ -109,32 +109,9 @@ main {
           font-weight: 500;
         }
       }
-      form {
-        box-shadow: none;
-        border: 1px solid #333;
-        border-radius: 8px;
-        padding: 1rem;
-        background-color: #1a1a1a;
-        .input-container {
-          label {
-            color: #d7d7d7;
-          }
-          input,
-          textarea {
-            background-color: #2a2a2a;
-            border: none;
-            border-radius: 6px;
-            color: #e0e0e0;
-            padding: 0.6rem 0.8rem;
-            font-size: 1rem;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            &:focus {
-              background-color: #3a3a3a;
-              outline: none;
-              box-shadow: 0 0 5px #6a9fb5;
-              color: #fff;
-            }
-          }
+      .contact-content {
+        p {
+          color: #fff;
         }
       }
     }
@@ -265,7 +242,7 @@ main {
     .contact-content {
       p {
         font-size: 0.9em;
-        color: #fff;
+        //color: #fff;
       }
       ul {
         margin-top: 30px;
@@ -497,7 +474,7 @@ main {
     .contact-content {
       p {
         font-size: 1.2em;
-        color: #fff;
+        //color: #fff;
       }
       ul {
         margin-top: 30px;

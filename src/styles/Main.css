@@ -428,6 +428,7 @@ main.dark-theme .tech-section ul li {
 }
 main.dark-theme .tech-section ul li svg {
   fill: #9ca3af;
+  filter: grayscale(100%) brightness(1.5);
 }
 main.dark-theme .tech-section ul li p {
   background-color: #fff;
@@ -542,6 +543,7 @@ main.dark-theme .tools-section ul li {
 }
 main.dark-theme .tools-section ul li svg {
   fill: #9ca3af;
+  filter: grayscale(100%) brightness(1.5);
 }
 main.dark-theme .tools-section ul li p {
   background-color: #fff;
@@ -746,31 +748,7 @@ main .main-content li {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
-.dark-theme .main-content .contact-section form {
-  box-shadow: none;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: #1a1a1a;
-}
-.dark-theme .main-content .contact-section form .input-container label {
-  color: #d7d7d7;
-}
-.dark-theme .main-content .contact-section form .input-container input,
-.dark-theme .main-content .contact-section form .input-container textarea {
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 6px;
-  color: #e0e0e0;
-  padding: 0.6rem 0.8rem;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.dark-theme .main-content .contact-section form .input-container input:focus,
-.dark-theme .main-content .contact-section form .input-container textarea:focus {
-  background-color: #3a3a3a;
-  outline: none;
-  box-shadow: 0 0 5px #6a9fb5;
+.dark-theme .main-content .contact-section .contact-content p {
   color: #fff;
 }
 
