@@ -1,7 +1,7 @@
 import "../styles/header/Header.css";
 import { useTheme } from "../contexts/HandleClick.tsx";
 import HeaderDetails from "./HeaderDetails.tsx";
-import myPicture from "../assets/myPicture.png";
+import myPicture from "../assets/my-picture.png";
 
 function Header() {
   const { theme } = useTheme();
