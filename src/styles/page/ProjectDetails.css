@@ -136,6 +136,7 @@
   width: 60%;
   margin: 0 auto;
 }
+.project-detail .project-gallery .video-wrapper,
 .project-detail .project-gallery .image-wrapper {
   width: 100%;
   border-radius: 16px;
@@ -143,6 +144,9 @@
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
+.project-detail .project-gallery .video-wrapper video,
+.project-detail .project-gallery .video-wrapper img,
+.project-detail .project-gallery .image-wrapper video,
 .project-detail .project-gallery .image-wrapper img {
   width: 100%;
   height: auto;
@@ -175,7 +179,7 @@
 .project-detail.dark-theme .project-header .project-links .btn-outline:hover {
   border-color: #fff;
 }
-.project-detail.dark-theme .image-wrapper {
+.project-detail.dark-theme .video-wrapper {
   border-color: #374151;
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
 }

@@ -3,6 +3,7 @@ import { freelanceProjects, projects } from "../data";
 import RenderIcons from "./RenderIcons";
 import "../styles/page/ProjectDetails.css";
 import { useTheme } from "../contexts/HandleClick";
+import RenderAssets from "./RenderAssets";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -24,6 +25,7 @@ export default function ProjectDetail() {
     techStackIcons,
     img,
     imageAlt,
+    video,
   } = project;
 
   return (
@@ -59,16 +61,14 @@ export default function ProjectDetail() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              Live Demo
+              See Me Working
             </a>
           )}
         </div>
       </section>
 
       <section className="project-gallery">
-        <div className="image-wrapper">
-          <img src={img} alt={imageAlt} />
-        </div>
+        <RenderAssets img={img} imgAlt={imageAlt} video={video} />
       </section>
     </main>
   );

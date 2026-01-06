@@ -5,6 +5,12 @@ import chefInteligente from "/src/assets/img/chef-inteligente.webp";
 import proyectoUrsula from "/src/assets/img/proyectoUrsula.webp";
 import weconnect from "/src/assets/img/weconnect.webp";
 import silentBeauty from "/src/assets/img/silentBeauty.webp";
+/*---------------------------------- videos ----------------------------------*/
+import ursulaVideo from "/src/assets/videos/ursula.mp4";
+import chefInteligenteVideo from "/src/assets/videos/chef-virtual.mp4";
+//import silentBeauty from "/src/assets/videos/silent-beauty.mp4";
+import weconnectVideo from "/src/assets/videos/weconnect.mp4";
+
 /*---------------------------------- NAVBAR ----------------------------------*/
 export const navbarLinks = [
   { name: "Home", link: "/" },
@@ -47,6 +53,7 @@ export const freelanceProjects: ProjectItems[] = [
     slug: "proyecto-ursula",
     img: proyectoUrsula,
     imageAlt: "AI Legislative Assistant",
+    video: ursulaVideo,
     projectName: "AI Legislative Assistant (Freelance)",
     projectDescription:
       "Engineered a production-ready AI conversational agent specialized in a legislative representative's public profile. Architected a type-safe frontend using React and TypeScript, and integrated the Google Gemini API via a Node.js/Express backend.",
@@ -87,6 +94,7 @@ export const projects: ProjectItems[] = [
     slug: "tu-chef-inteligente",
     img: chefInteligente,
     imageAlt: "Tu Chef Inteligente ",
+    video: chefInteligenteVideo,
     projectName: "Tu-Chef-Virtual (AI Recipe Assistant)",
     projectDescription:
       "Full-stack web app (Team Project) that uses the Google AI API to generate personalized recipes based on user allergies, preferences, and ingredients. Architected a secure RESTful API with Node.js, implementing JWT and bcrypt for user authentication.",
@@ -143,6 +151,7 @@ export const projects: ProjectItems[] = [
     slug: "silent-beauty",
     img: silentBeauty,
     imageAlt: "Silent Beauty",
+    video: "",
     projectName: "Silent Beauty",
     projectDescription:
       "A pixel-perfect, progressive web app designed for photography. Achieved a perfect 100/100 Google Lighthouse score across Performance, SEO, and Accessibility. Solved complex cross-browser compatibility issues (iOS/In-App Browsers) using modern CSS viewports (svh) and adaptive Flexbox layouts.",
@@ -176,6 +185,7 @@ export const projects: ProjectItems[] = [
     slug: "weconnect",
     img: weconnect,
     imageAlt: "Chat in live using socket.io",
+    video: weconnectVideo,
     projectName: "WeConnect",
     projectDescription:
       "A real-time chat application built with Socket.IO, featuring user authentication with registration and login, and account management options including updating email and password.",

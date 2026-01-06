@@ -50,6 +50,7 @@ export interface ProjectItems {
   slug: string;
   img: string;
   imageAlt: string;
+  video: string
   projectName: string;
   projectDescription: string;
   techStackIcons: TechIcon[];
