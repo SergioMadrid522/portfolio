@@ -7,10 +7,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    //text-align: center;
     margin-bottom: 4rem;
 
     h1 {
+      text-align: center;
       font-size: 3rem;
       font-weight: 800;
       color: #111;
@@ -19,18 +20,30 @@
       line-height: 1.1;
     }
 
-    .description {
+    .description,
+    .extra-details {
       font-size: 1.125rem;
       line-height: 1.8;
       color: #4b5563;
       max-width: 65ch;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem;
     }
 
+    .extra-details {
+      .credentials-container {
+        .credentials {
+          margin-bottom: 1em;
+        }
+      }
+      .notes {
+        font-style: italic;
+      }
+    }
     .tech-stack {
       margin-bottom: 3rem;
 
       h3 {
+        text-align: center;
         font-size: 0.875rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
@@ -174,7 +187,9 @@
       color: #fff;
     }
 
-    .description {
+    .description,
+    .credentials-container,
+    .notes {
       color: #fff;
     }
 
@@ -214,8 +229,14 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .project-detail {
     .project-header {
-      .description {
+      .description,
+      .extra-details {
         padding: 1em;
+      }
+      .extra-details {
+        .credentials-container {
+          text-align: center;
+        }
       }
       .tech-stack {
         ul {
@@ -240,8 +261,14 @@
 @media screen and (max-width: 767px) {
   .project-detail {
     .project-header {
-      .description {
+      .description,
+      .extra-details {
         padding: 1em;
+      }
+      .extra-details {
+        .credentials-container {
+          text-align: center;
+        }
       }
       .tech-stack {
         ul {

@@ -50,12 +50,18 @@ export interface ProjectItems {
   slug: string;
   img: string;
   imageAlt: string;
-  video: string
+  video: string;
   projectName: string;
   projectDescription: string;
   techStackIcons: TechIcon[];
   projectLink: string;
   code: string;
+  credentials?: {
+    user: string;
+    password: string;
+  }[];
+
+  notes?: string;
 }
 
 export type ProjectSectionProps = {

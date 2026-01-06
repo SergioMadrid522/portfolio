@@ -6,10 +6,10 @@ import proyectoUrsula from "/src/assets/img/proyectoUrsula.webp";
 import weconnect from "/src/assets/img/weconnect.webp";
 import silentBeauty from "/src/assets/img/silentBeauty.webp";
 /*---------------------------------- videos ----------------------------------*/
-import ursulaVideo from "/src/assets/videos/ursula.webm";
-import chefInteligenteVideo from "/src/assets/videos/chef-virtual.webm";
-//import silentBeauty from "/src/assets/videos/silent-beauty.webm";
-import weconnectVideo from "/src/assets/videos/weconnect.webm";
+import ursulaVideo from "/src/assets/videos/ursula.mp4";
+import chefInteligenteVideo from "/src/assets/videos/chef-virtual.mp4";
+//import silentBeauty from "/src/assets/videos/silent-beauty.mp4";
+import weconnectVideo from "/src/assets/videos/weconnect.mp4";
 
 /*---------------------------------- NAVBAR ----------------------------------*/
 export const navbarLinks = [
@@ -144,6 +144,9 @@ export const projects: ProjectItems[] = [
     ],
     projectLink: "https://tu-chef-inteligente.netlify.app",
     code: "https://github.com/SergioMadrid522/tu-chef-virtual",
+    credentials: [{ user: "admin", password: "admin" }],
+    notes:
+      "The initial load may take up to minute to start (Free Tier cold start). Please be patient.",
   },
   //Silent Beauty
   {
@@ -235,6 +238,12 @@ export const projects: ProjectItems[] = [
     ],
     projectLink: "https://weconnectchat.netlify.app",
     code: "https://github.com/SergioMadrid522/weconnect",
+    credentials: [
+      { user: "juanPerez@hotmail.com", password: "12345678" },
+      { user: "pepe@hotmail.com", password: "12345678" },
+    ],
+    notes:
+      "The initial load may take up to minute to start (Free Tier cold start). Please be patient.",
   },
 ];
 

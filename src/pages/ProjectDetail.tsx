@@ -26,6 +26,8 @@ export default function ProjectDetail() {
     img,
     imageAlt,
     video,
+    credentials,
+    notes,
   } = project;
 
   return (
@@ -34,6 +36,29 @@ export default function ProjectDetail() {
         <h1>{projectName}</h1>
 
         <p className="description">{projectDescription}</p>
+        {credentials && notes && (
+          <div className="extra-details">
+            {credentials && (
+              <div className="credentials-container">
+                <p className="credentials-container__title">Credentials:</p>
+                {credentials.map(({ user, password }) => (
+                  <div className="credentials">
+                    <p className="credentials__user">
+                      <strong>User: </strong>
+                      {user}
+                    </p>
+                    <p className="credentials__password">
+                      <strong>Password: </strong>
+                      {password}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {notes && <p className="notes">{`Notes: ${notes}`}</p>}
+          </div>
+        )}
 
         <div className="tech-stack">
           <h3>Technologies Used</h3>
