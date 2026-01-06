@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className={`${theme === "dark" ? "dark-theme" : ""} `}>
       <div className="welcome">
-        <Link to="/">Welcome to my portfolio :)</Link>
+        <Link to="/">Fabian Madrid.</Link>
       </div>
 
       <NavbarMenu open={open} setOpen={setOpen} />

@@ -5,29 +5,32 @@ import Main from "./main/Main";
 import Footer from "./footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectDetail from "./pages/ProjectDetail";
+import ScrollToHashElement from "./utils/ScrollToHashElement";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      <BrowserRouter>
+        <ScrollToHashElement />
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Main />
+              </>
+            }
+          />
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Main />
-            </>
-          }
-        />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="/freelance/:slug" element={<ProjectDetail />} />
+        </Routes>
 
-        <Route path="/projects/:slug" element={<ProjectDetail />} />
-        <Route path="/freelance/:slug" element={<ProjectDetail />} />
-      </Routes>
-
-      <Footer />
-    </BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

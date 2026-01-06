@@ -6,11 +6,11 @@ function Habilities() {
 
   return (
     <div className="habilities">
-      <div className="soft-skills">
-        <h3>SOFT SKILLS</h3>
+      <div className="learning">
+        <h3>WHAT AM I CURRENTLY LEARNING?</h3>
         <ul>
-          {skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
+          {learning.map((item, idx) => (
+            <li key={idx}>{item}</li>
           ))}
         </ul>
       </div>
@@ -24,11 +24,11 @@ function Habilities() {
         </ul>
       </div>
 
-      <div className="learning">
-        <h3>WHAT AM I CURRENTLY LEARNING?</h3>
+      <div className="soft-skills">
+        <h3>SOFT SKILLS</h3>
         <ul>
-          {learning.map((item, idx) => (
-            <li key={idx}>{item}</li>
+          {skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
           ))}
         </ul>
       </div>
