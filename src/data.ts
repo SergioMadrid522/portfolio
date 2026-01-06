@@ -6,10 +6,10 @@ import proyectoUrsula from "/src/assets/img/proyectoUrsula.webp";
 import weconnect from "/src/assets/img/weconnect.webp";
 import silentBeauty from "/src/assets/img/silentBeauty.webp";
 /*---------------------------------- videos ----------------------------------*/
-import ursulaVideo from "/src/assets/videos/ursula.mp4";
-import chefInteligenteVideo from "/src/assets/videos/chef-virtual.mp4";
-//import silentBeauty from "/src/assets/videos/silent-beauty.mp4";
-import weconnectVideo from "/src/assets/videos/weconnect.mp4";
+import ursulaVideo from "/src/assets/videos/ursula.webm";
+import chefInteligenteVideo from "/src/assets/videos/chef-virtual.webm";
+//import silentBeauty from "/src/assets/videos/silent-beauty.webm";
+import weconnectVideo from "/src/assets/videos/weconnect.webm";
 
 /*---------------------------------- NAVBAR ----------------------------------*/
 export const navbarLinks = [

@@ -61,7 +61,7 @@ export default function ProjectDetail() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              See Me Working
+              Try It Out
             </a>
           )}
         </div>
