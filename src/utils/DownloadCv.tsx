@@ -14,7 +14,7 @@ export default function DownloadCv() {
   };
   return (
     <button className="download-cv" onClick={handleDownloadCV}>
-      CV
+      Download Resume
     </button>
   );
 }
