@@ -39,7 +39,6 @@
   /* Sombra suave para darle elevación (3D) */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Efecto al pasar el mouse */
 }
 .my-description .my-description-content .my-image img {
   width: 100%;
@@ -52,6 +51,9 @@
   /* EL TRUCO PRO: Blanco y negro por defecto */
   filter: grayscale(100%) contrast(1.1);
   transition: all 0.5s ease;
+}
+.my-description .my-description-content .my-image {
+  /* Efecto al pasar el mouse */
 }
 .my-description .my-description-content .my-image:hover {
   transform: translateY(-5px); /* Flota un poquito hacia arriba */

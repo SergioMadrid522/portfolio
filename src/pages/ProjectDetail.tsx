@@ -55,8 +55,12 @@ export default function ProjectDetail() {
                 ))}
               </div>
             )}
+          </div>
+        )}
 
-            {notes && <p className="notes">{`Notes: ${notes}`}</p>}
+        {notes && (
+          <div className="extra-details">
+            <p className="description notes">{`Notes: ${notes}`}</p>
           </div>
         )}
 
@@ -91,9 +95,13 @@ export default function ProjectDetail() {
           )}
         </div>
       </section>
-
       <section className="project-gallery">
-        <RenderAssets img={img} imgAlt={imageAlt} video={video} />
+        <RenderAssets
+          img={img}
+          imgAlt={imageAlt}
+          video={video}
+          projectName={projectName}
+        />
       </section>
     </main>
   );
