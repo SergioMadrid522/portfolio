@@ -7,7 +7,7 @@ export default function Databases() {
     <div className="tech-content__languages">
       <p className="titles">Databases</p>
       <ul role="list">
-        {dataBases.map(({ name, color, viewbox, svg }) => (
+        {dataBases.map(({ name, color, viewbox, icon, svg }) => (
           <li
             key={name}
             className={`database-item ${theme ? "" : "ldatabase__dark-theme"}`}
@@ -19,7 +19,11 @@ export default function Databases() {
               role="img"
               aria-label={name}
             >
-              <path fillRule="evenodd" d={svg} />
+              {typeof icon === "function" ? (
+                icon()
+              ) : (
+                <path d={svg} fill={color} />
+              )}
             </svg>
 
             <p

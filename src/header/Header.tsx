@@ -8,6 +8,7 @@ function Header() {
   return (
     <header
       className={`my-description ${theme === "dark" ? "dark-theme" : ""}`}
+      id="home"
     >
       <div className="my-description-content">
         <HeaderDetails />
