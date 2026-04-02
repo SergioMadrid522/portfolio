@@ -11,7 +11,7 @@ export default function Testing() {
       />
       <p className="titles">QA & Testing</p>
       <ul role="list">
-        {testing.map(({ name, color, viewbox, svg }) => (
+        {testing.map(({ name, color, viewbox, icon, svg }) => (
           <li
             key={name}
             className={`database-item ${theme ? "" : "ldatabase__dark-theme"}`}
@@ -23,7 +23,11 @@ export default function Testing() {
               role="img"
               aria-label={name}
             >
-              <path fillRule="evenodd" d={svg} />
+              {typeof icon === "function" ? (
+                icon()
+              ) : (
+                <path d={svg} fill={color} />
+              )}
             </svg>
 
             <p

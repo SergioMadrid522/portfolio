@@ -8,7 +8,7 @@ export default function Languages() {
       <p className="titles">Languages</p>
 
       <ul role="list">
-        {languages.map(({ name, color, viewbox, svg }) => (
+        {languages.map(({ name, color, viewbox, svg, icon }) => (
           <li
             key={name}
             className={`language-item ${theme ? "" : "language__dark-theme"}`}
@@ -20,7 +20,11 @@ export default function Languages() {
               role="img"
               aria-label={name}
             >
-              <path fillRule="evenodd" d={svg} />
+              {typeof icon === "function" ? (
+                icon(`icon-${name}`)
+              ) : (
+                <path d={svg} fill={color} />
+              )}
             </svg>
 
             <p>{name}</p>

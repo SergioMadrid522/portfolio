@@ -1,6 +1,6 @@
 /* types */
 
-import { habilities } from "../../data.ts";
+import { habilities } from "../../data";
 function Habilities() {
   const { skills, languages, learning } = habilities;
 

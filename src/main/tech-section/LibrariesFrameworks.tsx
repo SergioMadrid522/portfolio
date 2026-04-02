@@ -7,7 +7,7 @@ export default function LibrariesFrameworks() {
     <div className="tech-content__languages">
       <p className="titles">Libraries and Frameworks</p>
       <ul role="list">
-        {librariesFrameworks.map(({ name, color, viewbox, svg }) => (
+        {librariesFrameworks.map(({ name, color, viewbox, icon, svg }) => (
           <li
             key={name}
             className={`libFrame-item ${
@@ -21,7 +21,11 @@ export default function LibrariesFrameworks() {
               role="img"
               aria-label={name}
             >
-              <path fillRule="evenodd" d={svg} />
+              {typeof icon === "function" ? (
+                icon()
+              ) : (
+                <path d={svg} fill={color} />
+              )}
             </svg>
 
             <p
