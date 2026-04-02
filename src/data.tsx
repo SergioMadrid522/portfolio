@@ -1,6 +1,6 @@
 /* types */
 import type { HeaderContentProps, ProjectItems } from "./types";
-type IconType = (id: string) => JSX.Element;
+
 /*---------------------------------- images ----------------------------------*/
 import chefInteligente from "/src/assets/img/chef-inteligente.webp";
 import proyectoUrsula from "/src/assets/img/proyectoUrsula.webp";
@@ -13,7 +13,7 @@ import chefInteligenteVideo from "/src/assets/videos/chef-virtual.mp4";
 import silentBeautyVideo from "/src/assets/videos/silent-beauty.mp4";
 import weconnectVideo from "/src/assets/videos/weconnect.mp4";
 import yamaVideo from "/src/assets/videos/yama.mp4";
-import type { JSX } from "react";
+
 /*---------------------------------- NAVBAR ----------------------------------*/
 export const navbarLinks = [
   { name: "Home", link: "/#home" },
