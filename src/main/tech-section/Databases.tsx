@@ -3,6 +3,7 @@ import { dataBases } from "../../data";
 
 export default function Databases() {
   const { theme } = useTheme();
+
   return (
     <div className="tech-content__languages">
       <p className="titles">Databases</p>
