@@ -1,0 +1,26 @@
+export const iconBadgeStyle = `   
+    absolute
+    left-1/2
+    -translate-x-1/2
+    -top-12
+    whitespace-nowrap
+    rounded-xl
+    bg-[#1f2937]
+    px-3
+    py-2
+    font-bold
+    text-sm
+    text-white
+    shadow-md
+    opacity-0
+    pointer-events-none
+    transition-opacity
+    group-hover/icon:opacity-100
+    after:content-['']
+    after:absolute
+    after:top-full
+    after:left-1/2
+    after:-translate-x-1/2
+    after:border-[8px]
+    after:border-transparent
+    after:border-t-[#1f2937]`;
