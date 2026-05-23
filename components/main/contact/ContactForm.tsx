@@ -5,7 +5,6 @@ export default function ContactForm() {
   const { rightArrowIcon } = GLOBAL;
   return (
     <MacModal.WindowModal>
-      <span id="contact-me" />
       <MacModal.WindowModalTitle>contact-me.ts</MacModal.WindowModalTitle>
       <MacModal.WindowModalContent>
         <form className="relative z-10 flex flex-col gap-6">

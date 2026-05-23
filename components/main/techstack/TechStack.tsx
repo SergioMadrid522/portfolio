@@ -5,7 +5,7 @@ export default function TechStack() {
   return (
     <section
       id="tech-stack"
-      className="max-w-6xl mx-auto px-6 pt-32 relative z-10"
+      className="max-w-6xl mx-auto px-6 pt-32 relative z-10 scroll-mt-22"
     >
       <div className="flex items-center gap-4 mb-12">
         <div className="h-px w-12 bg-[#FACC15]" />
