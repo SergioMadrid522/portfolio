@@ -152,7 +152,8 @@ export const projects = [
     githubLink: "https://github.com/SergioMadrid522/blog",
     badge: "Perfect 100/100 Google Lighthouse",
     slug: "silent-beauty",
-    video: "/videos/silent-beauty.mp4",
+    video:
+      "https://res.cloudinary.com/dlhd0iosj/video/upload/v1779549305/silent-beauty_eu99hm.mp4",
     isUnderDevelopment: false,
     mobileFirst: false,
   },
@@ -171,7 +172,8 @@ export const projects = [
     githubLink: "https://github.com/SergioMadrid522/yama",
     badge: "E2E Tested",
     slug: "yama",
-    video: "/videos/yama.mp4",
+    video:
+      "https://res.cloudinary.com/dlhd0iosj/video/upload/v1779549268/yama_bmeens.mov",
     isUnderDevelopment: false,
     mobileFirst: true,
   },

@@ -1,6 +1,6 @@
 export function WindowModal({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-8 inline-block rounded-lg bg-[#151515] border border-white/10 shadow-2xl overflow-hidden">
+    <div className="mb-8 inline-block rounded-lg bg-[#151515] border border-white/10 shadow-2xl overflow-hidden ">
       {children}
     </div>
   );

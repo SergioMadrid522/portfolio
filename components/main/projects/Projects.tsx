@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative z-10 mx-auto max-w-6xl px-6 pt-32"
+      className="relative z-10 mx-auto max-w-6xl px-6 pt-32 scroll-mt-25"
     >
       <div className="mb-12 flex items-center gap-4">
         <div className="h-px w-12 bg-[#FACC15]" />

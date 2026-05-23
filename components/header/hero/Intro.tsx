@@ -1,7 +1,7 @@
 export default function Intro() {
   return (
     <>
-      <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 tracking-tight">
+      <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 tracking-tight wrap-anywhere">
         Sergio Acuña
       </h1>
       <h2 className="text-2xl md:text-3xl font-medium text-[#FACC15] mt-4 flex items-center gap-3">
