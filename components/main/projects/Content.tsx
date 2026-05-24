@@ -34,7 +34,7 @@ export default function Content() {
 
                 <Link
                   href={slug}
-                  className="group flex items-center gap-2 text-sm font-semibold text-white transition-colors group-hover:text-[#FACC15]"
+                  className="group flex items-center gap-2 text-sm font-semibold text-white transition-colors group-hover:text-[#FACC15] group-active:text-[#FACC15]"
                   aria-label={`Link to ${title}`}
                 >
                   See more
@@ -47,8 +47,4 @@ export default function Content() {
       )}
     </div>
   );
-}
-
-{
-  /* */
 }

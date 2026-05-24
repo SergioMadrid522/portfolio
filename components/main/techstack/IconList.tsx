@@ -1,16 +1,11 @@
 import { iconBadgeStyle } from "@/style.data";
-import { JSX } from "react";
-interface IconListProps {
-  stack: {
-    label: string;
-    icon: JSX.Element;
-  }[];
-}
+import { IconListProps } from "@/types";
+
 export default function IconList({ stack }: IconListProps) {
   return (
-    <ul className="flex items-center gap-4">
+    <ul className="flex flex-wrap items-center gap-4 select-none">
       {stack.map(({ label, icon }) => (
-        <li key={label} className="group/icon relative">
+        <li key={label} className="group/icon relative ">
           {icon}
           <p className={iconBadgeStyle}>{label}</p>
         </li>

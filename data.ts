@@ -1,7 +1,9 @@
 import {
+  ai,
+  backend,
   databases,
   deployment,
-  frameworks,
+  frontend,
   GLOBAL,
   languages,
   testing,
@@ -11,12 +13,14 @@ import type { NavbarOptions, SocialMedia } from "./types";
 
 const { githubIconGlobal, linkedIn } = GLOBAL;
 const { typescriptIcon, javascriptIcon, pythonIcon } = languages;
-const { reactIcon, nextIcon, tailwindIcon, nodeIcon, expressIcon } = frameworks;
-const { mysqlIcon, mariadbIcon, postgresqlIcon } = databases;
+const { htmlIcon, cssIcon, sassIcon, tailwindIcon, reactIcon, nextIcon } =
+  frontend;
+const { nodeIcon, expressIcon, rabbitmqIcon } = backend;
+const { mysqlIcon, mariadbIcon, postgresqlIcon, prismaIcon } = databases;
 const { dockerIcon, cloudinaryIcon } = deployment;
 const { playwrightIcon, zodIcon, postmanIcon } = testing;
-const { gitIcon, githubIcon, rabbitmqIcon } = workflow;
-
+const { gitIcon, githubIcon, jupyterIcon } = workflow;
+const { geminiIcon } = ai;
 export const navbarOptions: NavbarOptions[] = [
   { label: "About me", link: "/#about-me" },
   { label: "Tech stack", link: "/#tech-stack" },
@@ -53,23 +57,34 @@ export const techStack = [
     ],
   },
   {
-    title: "Libraries and Frameworks",
+    title: "Frontend",
     hoverColor: "#60A5FA",
     stack: [
+      { label: "HTML", icon: htmlIcon() },
+      { label: "CSS", icon: cssIcon() },
+      { label: "Sass/SCSS", icon: sassIcon() },
+      { label: "Tailwind CSS", icon: tailwindIcon() },
       { label: "React.js", icon: reactIcon() },
       { label: "Next.js", icon: nextIcon() },
-      { label: "Tailwind CSS", icon: tailwindIcon() },
-      { label: "Node.js", icon: nodeIcon() },
-      { label: "Express.js", icon: expressIcon() },
     ],
   },
   {
-    title: "Databases",
+    title: "Backend",
+    hoverColor: "#60A5FA",
+    stack: [
+      { label: "Node.js", icon: nodeIcon() },
+      { label: "Express.js", icon: expressIcon() },
+      { label: "RabbitMQ", icon: rabbitmqIcon() },
+    ],
+  },
+  {
+    title: "Databases & ORMs",
     hoverColor: "#C49A6C",
     stack: [
       { label: "MySQL", icon: mysqlIcon() },
       { label: "MariaDB", icon: mariadbIcon() },
       { label: "PostgreSQL", icon: postgresqlIcon() },
+      { label: "Prisma", icon: prismaIcon() },
     ],
   },
   {
@@ -95,7 +110,7 @@ export const techStack = [
     stack: [
       { label: "Git", icon: gitIcon() },
       { label: "GitHub", icon: githubIcon() },
-      { label: "Rabbit MQ", icon: rabbitmqIcon() },
+      { label: "Jupyter Notebook", icon: jupyterIcon() },
     ],
   },
 ];
@@ -111,6 +126,11 @@ export const projects = [
       { label: "Next.js", icon: nextIcon() },
       { label: "TypeScript", icon: typescriptIcon() },
       { label: "Tailwind CSS", icon: tailwindIcon() },
+      { label: "Prisma", icon: prismaIcon() },
+      { label: "PostgreSQL", icon: postgresqlIcon() },
+      { label: "Zod", icon: zodIcon() },
+      { label: "Docker", icon: dockerIcon() },
+      { label: "Node.js", icon: nodeIcon() },
     ],
     demoLink: "",
     githubLink: "https://github.com/SergioMadrid522/proyecto-residencias",
@@ -126,9 +146,9 @@ export const projects = [
     description:
       "AI-powered analysis engine processing over 7 million historical records to predict traffic accident severity. Architected a data pipeline with Pandas and trained a Random Forest classification model achieving 74.14% accuracy. Currently extending the architecture with a FastAPI backend and React dashboard.",
     stack: [
-      { label: "Next.js", icon: nextIcon() },
-      { label: "TypeScript", icon: typescriptIcon() },
-      { label: "Tailwind CSS", icon: tailwindIcon() },
+      { label: "Python", icon: pythonIcon() },
+      { label: "Jupyter Notebook", icon: jupyterIcon() },
+      //{ label: "Tailwind CSS", icon: tailwindIcon() },
     ],
     demoLink: "",
     githubLink: "https://github.com/SergioMadrid522/us-accidents-analysis-ml",
@@ -150,7 +170,7 @@ export const projects = [
     ],
     demoLink: "https://fabian-photography.vercel.app",
     githubLink: "https://github.com/SergioMadrid522/blog",
-    badge: "Perfect 100/100 Google Lighthouse",
+    badge: "100/100 Lighthouse",
     slug: "silent-beauty",
     video:
       "https://res.cloudinary.com/dlhd0iosj/video/upload/v1779549305/silent-beauty_eu99hm.mp4",
@@ -179,23 +199,26 @@ export const projects = [
   },
   {
     id: 5,
-    tags: ["React", "Tailwind CSS", "CRUD Architecture"],
-    title: "Digital Recipe Manager",
+    tags: ["AI Integration", "Prompt Engineering", "Docker"],
+    title: "AI Legislative Assistant",
     description:
-      "A digital recipe management application engineered to digitize physical cookbooks. Features an intuitive UI for content creation, categorized storage, and a mobile-first design optimized for seamless accessibility on tablet and mobile devices.",
+      "An AI-powered conversational platform engineered for a legislative representative. Integrated the Gemini API with React and TypeScript to handle real-time streaming responses, optimized complex system prompt logic for civic domains, and containerized the application environment with Docker to guarantee reproducible builds.",
     stack: [
-      { label: "Next.js", icon: nextIcon() },
+      { label: "React.js", icon: reactIcon() },
       { label: "TypeScript", icon: typescriptIcon() },
       { label: "Tailwind CSS", icon: tailwindIcon() },
+      { label: "Gemini API", icon: geminiIcon() },
+      { label: "Docker", icon: dockerIcon() },
     ],
-    badge: "Mobile-First UX",
-    slug: "family-cookbook",
     demoLink: "",
-    githubLink: "https://github.com/SergioMadrid522/family-cookbook",
+    githubLink: "https://github.com/SergioMadrid522/info-diputada",
+    badge: ["Gemini AI Powered"],
+    slug: "info-diputada",
+    video:
+      "https://res.cloudinary.com/dlhd0iosj/video/upload/v1779660900/ursula_ictbgy.mp4",
     isUnderDevelopment: false,
-    mobileFirst: true,
+    mobileFirst: false,
   },
-
   /*{
     id: 5,
     tags: ["", "", ""],

@@ -10,3 +10,9 @@ export interface SocialMedia {
   icon: ReactElement;
   link: string;
 }
+export interface IconListProps {
+  stack: {
+    label: string;
+    icon: JSX.Element;
+  }[];
+}

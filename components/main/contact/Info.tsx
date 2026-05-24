@@ -17,9 +17,9 @@ export default function Info() {
       </p>
       <a
         href="mailto:sergioac.madrid@hotmail.com"
-        className="flex items-center gap-4 text-gray-400 hover:text-[#FACC15] transition-colors group"
+        className="flex items-center gap-4 text-gray-400 hover:text-[#FACC15] active:text-[#FACC15] transition-colors group"
       >
-        <div className="w-10 h-10 rounded-lg bg-[#151515] border border-white/10 flex items-center justify-center group-hover:border-[#FACC15]/50 transition-colors">
+        <div className="w-10 h-10 rounded-lg bg-[#151515] border border-white/10 flex items-center justify-center group-hover:border-[#FACC15]/50 group-active:border-[#FACC15]/50 transition-colors">
           {mailIcon()}
         </div>
         Send me an Email

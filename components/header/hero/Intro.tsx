@@ -4,11 +4,11 @@ export default function Intro() {
       <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 tracking-tight wrap-anywhere">
         Sergio Acuña
       </h1>
-      <h2 className="text-2xl md:text-3xl font-medium text-[#FACC15] mt-4 flex items-center gap-3">
-        Software Engineer
-        <span className="w-2 h-2 rounded-full bg-[#FACC15] animate-pulse"></span>
-        QA Automation
-      </h2>
+      <div className="text-xl lg:text-3xl font-medium text-[#FACC15] mt-4 flex items-center gap-3 text-left">
+        <p>Software Engineer</p>
+        <span className="w-2 h-2 rounded-full bg-[#FACC15] animate-pulse" />
+        <p>QA Automation</p>
+      </div>
 
       <p className="text-gray-400 mt-6 max-w-lg leading-relaxed text-lg">
         Architecting high-performance web products with{" "}
