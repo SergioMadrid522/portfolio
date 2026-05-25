@@ -12,7 +12,7 @@ export default function Contact() {
         >
           Let's connect!
         </h3>
-        <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent"></div>
+        <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent" />
       </div>
 
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">

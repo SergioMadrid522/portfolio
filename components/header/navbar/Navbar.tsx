@@ -2,15 +2,16 @@
 import { navbarOptions } from "@/data";
 import { GLOBAL } from "@/icons.data";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Navbar() {
   const { hamburgerBtn } = GLOBAL;
   const [isOpen, setIsOpen] = useState(false);
-
+  const locations = ["About me", "Tech stack", "Projects", "Contact me"];
+  const location = usePathname();
   return (
     <nav className="sticky top-0 w-full backdrop-blur-xl bg-[#0A0A0A]/90 border-b border-white/10 z-50">
-      {/* Fila principal */}
       <div className="flex items-center p-5">
         <Link
           href="/"
@@ -21,7 +22,6 @@ export default function Navbar() {
           <span className="text-gray-500">&gt;</span>
         </Link>
 
-        {/* Desktop */}
         <ul className="hidden md:flex items-center justify-end gap-8">
           {navbarOptions.map(({ label, link }) => (
             <li key={label}>
@@ -35,7 +35,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Hamburger */}
         <button
           type="button"
           className="flex md:hidden cursor-pointer text-white"
@@ -45,7 +44,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile drawer — dentro del mismo nav */}
       <div
         className={`flex md:hidden flex-col overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-64" : "max-h-0"
@@ -57,7 +55,7 @@ export default function Navbar() {
               <Link
                 href={link}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2.5 text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 rounded-md transition-colors"
+                className="block px-3 py-2.5 text-sm font-medium text-gray-400 hover:text-white active:text-white hover:bg-white/5 rounded-md transition-colors"
               >
                 {label}
               </Link>

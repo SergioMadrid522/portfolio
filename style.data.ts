@@ -1,11 +1,13 @@
-export const iconBadgeStyle = `   
+export const iconBadgeStyle = `
+    outline
+    outline-white
     absolute
     left-1/2
     -translate-x-1/2
     -top-12
     whitespace-nowrap
     rounded-xl
-    bg-[#1f2937]
+    bg-[#171717]
     px-3
     py-2
     font-bold
@@ -16,11 +18,13 @@ export const iconBadgeStyle = `
     pointer-events-none
     transition-opacity
     group-hover/icon:opacity-100
-    after:content-['']
+    group-active/icon:opacity-100
+    select-none
+    after:content-['']    
     after:absolute
     after:top-full
     after:left-1/2
     after:-translate-x-1/2
     after:border-[8px]
     after:border-transparent
-    after:border-t-[#1f2937]`;
+    after:border-t-white`;

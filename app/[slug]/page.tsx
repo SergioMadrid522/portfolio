@@ -2,7 +2,6 @@ import { projects } from "@/data";
 import { Params } from "next/dist/server/request/params";
 import NotFound from "../not-found/page";
 import IconList from "@/components/main/techstack/IconList";
-import Image from "next/image";
 
 export default async function ProjectPage({
   params,
@@ -34,19 +33,21 @@ export default async function ProjectPage({
         </p>
 
         <div className="flex flex-wrap gap-4">
-          {!project.isUnderDevelopment && (
+          {project.demoLink && !project.isUnderDevelopment && (
             <a
               href={project.demoLink}
               target="_blank"
-              className="bg-[#FACC15] text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition shadow-[0_0_15px_rgba(250,204,21,0.2)] flex items-center gap-2"
+              rel="noopener noreferrer"
+              className="bg-[#FACC15] text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 active:bg-yellow-400 transition shadow-[0_0_15px_rgba(250,204,21,0.2)] flex items-center gap-2"
             >
               Live Demo
             </a>
           )}
           <a
             href={project.githubLink}
+            target="_blank"
             rel="noopener noreferrer"
-            className="border border-white/10 bg-[#151515] text-white px-6 py-3 rounded-lg hover:border-white/30 transition flex items-center gap-2"
+            className="border border-white/10 bg-[#151515] text-white px-6 py-3 rounded-lg hover:border-white/30 active:border-white/30 transition flex items-center gap-2"
           >
             Source Code
           </a>

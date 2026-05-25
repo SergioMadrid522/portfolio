@@ -40,7 +40,7 @@ export function ProjectCardDescription({
 
 export function ProjectCardBadge({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-center gap-2 text-xs font-mono text-blue-400 bg-blue-400/10 px-3 py-1.5 rounded-full border border-blue-400/20">
+    <div className="flex items-center gap-2 text-xs font-mono text-blue-400 bg-blue-400/10 px-3 py-1.5 rounded-full border border-blue-400/20 w-fit">
       {children}
     </div>
   );
