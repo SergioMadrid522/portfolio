@@ -211,7 +211,7 @@ export const projects = [
       { label: "Docker", icon: dockerIcon() },
     ],
     demoLink: "",
-    githubLink: "https://github.com/SergioMadrid522/info-diputada",
+    githubLink: "https://github.com/SergioMadrid522/proyectoUrsula",
     badge: ["Gemini AI Powered"],
     slug: "info-diputada",
     video:

@@ -1,5 +1,7 @@
 import { Url } from "next/dist/shared/lib/router/router";
 import { JSX, ReactElement } from "react";
+import { contactFormSchema } from "./schemas/contact.schema";
+import { z } from "zod";
 
 export interface NavbarOptions {
   label: string;
@@ -16,3 +18,5 @@ export interface IconListProps {
     icon: JSX.Element;
   }[];
 }
+
+export type ContactFormProps = z.infer<typeof contactFormSchema>;
