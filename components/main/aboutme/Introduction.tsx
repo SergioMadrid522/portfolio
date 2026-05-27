@@ -1,6 +1,6 @@
 export default function Introduction() {
   return (
-    <div className="lg:col-span-7 flex flex-col justify-center space-y-6 text-gray-400 text-lg leading-relaxed">
+    <div className="lg:col-span-7 flex flex-col justify-center space-y-6 text-white/70 text-lg leading-relaxed">
       <p>
         Software Engineer focused on building modern, high-performance
         interfaces with React, Next.js, and TypeScript. I have engineered

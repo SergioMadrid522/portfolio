@@ -10,7 +10,7 @@ export default function Intro() {
         <p>QA Automation</p>
       </div>
 
-      <p className="text-gray-400 mt-6 max-w-lg leading-relaxed text-lg">
+      <p className="text-white/70 mt-6 max-w-lg leading-relaxed text-lg">
         Architecting high-performance web products with{" "}
         <span className="text-white font-semibold">Next.js</span> and{" "}
         <span className="text-white font-semibold">TypeScript</span>, ensuring

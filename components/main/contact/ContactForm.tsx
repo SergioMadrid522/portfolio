@@ -27,7 +27,7 @@ export default function ContactForm() {
         >
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="flex flex-col gap-2">
-              <label className="font-mono text-xs tracking-wider text-gray-400 uppercase">
+              <label className="font-mono text-xs tracking-wider text-white/70 uppercase">
                 Name
               </label>
               <input
@@ -39,7 +39,7 @@ export default function ContactForm() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="font-mono text-xs tracking-wider text-gray-400 uppercase">
+              <label className="font-mono text-xs tracking-wider text-white/70 uppercase">
                 Company
               </label>
               <input
@@ -53,7 +53,7 @@ export default function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="font-mono text-xs tracking-wider text-gray-400 uppercase">
+            <label className="font-mono text-xs tracking-wider text-white/70 uppercase">
               Email Address
             </label>
             <input
@@ -66,7 +66,7 @@ export default function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="font-mono text-xs tracking-wider text-gray-400 uppercase">
+            <label className="font-mono text-xs tracking-wider text-white/70 uppercase">
               Message
             </label>
             <textarea

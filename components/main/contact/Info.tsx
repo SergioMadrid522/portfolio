@@ -11,7 +11,7 @@ export default function Info() {
         </span>
       </h4>
 
-      <p className="mb-10 max-w-md text-lg leading-relaxed text-gray-400">
+      <p className="mb-10 max-w-md text-lg leading-relaxed text-white/70">
         Whether you have a question, an open position, or just want to discuss
         software architecture and E2E testing, my inbox is open.
       </p>

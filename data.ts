@@ -207,6 +207,7 @@ export const projects = [
       { label: "React.js", icon: reactIcon() },
       { label: "TypeScript", icon: typescriptIcon() },
       { label: "Tailwind CSS", icon: tailwindIcon() },
+      { label: "Node.js", icon: nodeIcon() },
       { label: "Gemini API", icon: geminiIcon() },
       { label: "Docker", icon: dockerIcon() },
     ],
@@ -252,4 +253,28 @@ export const projects = [
     githubLink:"",
     isUnderDevelopment: true,
   }, */
+];
+
+export const phases = [
+  {
+    phase: "[x] Phase 1: ETL, EDA, and ML Model Training",
+    description:
+      "Cleaning and preprocessing the 7 million historical records, conducting Exploratory Data Analysis, performing feature engineering (including One-Hot Encoding for weather conditions), training the Scikit-Learn Random Forest model to achieve a 74.14% accuracy, and exporting the trained model and feature structure into .pkl (Pickle) files.",
+  },
+  {
+    phase: "[x] Phase 2: Data & AI Microservice with FastAPI",
+    description:
+      "Building a high-performance Python server that loads the serialized .pkl files into memory on startup. It will expose a GET /data endpoint to serve the optimized sample of 4,000 records (accidentes_muestra.json), a GET /columns endpoint to share the model's feature architecture, and a POST /predict endpoint to run live inference on new accident data using Scikit-Learn.",
+  },
+  {
+    phase:
+      "[ ] Phase 3: BFF (Backend for Frontend) Orchestrator with Node.js + TypeScript",
+    description:
+      "Developing a lightweight, type-safe API Gateway layer using Node.js and TypeScript (via Express). This service acts as the strict 'gatekeeper'—validating incoming payloads from the UI using schemas (e.g., Zod), handling data shaping, grouping, or pagination to protect client-side performance, and acts as a reverse proxy to forward clean requests to the FastAPI microservice, entirely eliminating browser CORS conflicts.",
+  },
+  {
+    phase: "[ ] Phase 4: Interactive Dashboard & Simulator with React & Mapbox",
+    description:
+      "Designing a premium Modern Dark Mode user interface that consumes the structured data from the Node.js BFF. This frontend will feature an analytical dashboard with interactive charts and geospatial heatmaps powered by Mapbox to visualize historical accidents, alongside a dedicated 'Risk Simulator' form allowing users to input live variables and dynamically display prediction risk alerts returned by the machine learning pipeline.",
+  },
 ];

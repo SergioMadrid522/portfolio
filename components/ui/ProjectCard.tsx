@@ -32,7 +32,7 @@ export function ProjectCardDescription({
   children: React.ReactNode;
 }) {
   return (
-    <p className="mb-4 flex-1 text-sm leading-relaxed text-gray-400">
+    <p className="mb-4 flex-1 text-sm leading-relaxed text-white/70">
       {children}
     </p>
   );

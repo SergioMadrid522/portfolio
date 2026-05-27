@@ -2,6 +2,7 @@ import { projects } from "@/data";
 import { Params } from "next/dist/server/request/params";
 import NotFound from "../not-found/page";
 import IconList from "@/components/main/techstack/IconList";
+import AccidentPhases from "@/components/AccidentPhases";
 
 export default async function ProjectPage({
   params,
@@ -28,9 +29,11 @@ export default async function ProjectPage({
           {project.title}
         </h1>
 
-        <p className="text-xl text-gray-400 leading-relaxed max-w-full mb-8">
+        <p className="text-xl text-white/70 leading-relaxed max-w-full mb-8">
           {project.description}
         </p>
+
+        {project.slug === "us-traffic-predictor" && <AccidentPhases />}
 
         <div className="flex flex-wrap gap-4">
           {project.demoLink && !project.isUnderDevelopment && (

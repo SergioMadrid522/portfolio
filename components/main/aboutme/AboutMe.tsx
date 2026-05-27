@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <section
       id="about-me"
-      className="max-w-6xl mx-auto px-6 pt-32 relative z-10 scroll-mt-24"
+      className="max-w-6xl mx-auto px-6 pt-32 relative z-10 scroll-mt-[10px]"
     >
       <div className="flex items-center gap-4 mb-8">
         <div className="h-px w-12 bg-[#FACC15]" />
