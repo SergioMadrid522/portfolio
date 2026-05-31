@@ -13,14 +13,16 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 w-full backdrop-blur-xl bg-[#0A0A0A]/90 border-b border-white/10 z-50">
       <div className="flex items-center p-5">
-        <Link
-          href="/"
-          className="font-mono text-2xl font-bold tracking-tighter text-white flex-1"
-        >
-          <span className="text-gray-500">&lt;</span>SA{" "}
-          <span className="text-[#FACC15]">/</span>
-          <span className="text-gray-500">&gt;</span>
-        </Link>
+        <div className="flex-1">
+          <Link
+            href="/"
+            className="w-fit font-mono text-2xl font-bold tracking-tighter text-white"
+          >
+            <span className="text-gray-500">&lt;</span>SA{" "}
+            <span className="text-[#FACC15]">/</span>
+            <span className="text-gray-500">&gt;</span>
+          </Link>
+        </div>
 
         <ul className="hidden md:flex items-center justify-end gap-8">
           {navbarOptions.map(({ label, link }) => (
