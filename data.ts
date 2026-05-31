@@ -12,10 +12,10 @@ import {
 import type { NavbarOptions, SocialMedia } from "./types";
 
 const { githubIconGlobal, linkedIn } = GLOBAL;
-const { typescriptIcon, javascriptIcon, pythonIcon } = languages;
+const { typescriptIcon, javascriptIcon, pythonIcon, javaIcon } = languages;
 const { htmlIcon, cssIcon, sassIcon, tailwindIcon, reactIcon, nextIcon } =
   frontend;
-const { nodeIcon, expressIcon, rabbitmqIcon } = backend;
+const { nodeIcon, expressIcon, springBootIcon, rabbitmqIcon } = backend;
 const { mysqlIcon, mariadbIcon, postgresqlIcon, prismaIcon } = databases;
 const { dockerIcon, cloudinaryIcon } = deployment;
 const { playwrightIcon, zodIcon, postmanIcon } = testing;
@@ -23,6 +23,7 @@ const { gitIcon, githubIcon, jupyterIcon } = workflow;
 const { geminiIcon } = ai;
 export const navbarOptions: NavbarOptions[] = [
   { label: "About me", link: "/#about-me" },
+  { label: "Experience", link: "/#experience" },
   { label: "Tech stack", link: "/#tech-stack" },
   { label: "Projects", link: "/#projects" },
   { label: "Contact me", link: "/#contact-me" },
@@ -51,9 +52,10 @@ export const techStack = [
     title: "Languages",
     hoverColor: "#FACC15",
     stack: [
-      { label: "TypeScript", icon: typescriptIcon() },
       { label: "JavaScript", icon: javascriptIcon() },
+      { label: "TypeScript", icon: typescriptIcon() },
       { label: "Python", icon: pythonIcon() },
+      { label: "Java", icon: javaIcon() },
     ],
   },
   {
@@ -74,6 +76,7 @@ export const techStack = [
     stack: [
       { label: "Node.js", icon: nodeIcon() },
       { label: "Express.js", icon: expressIcon() },
+      { label: "Spring Boot", icon: springBootIcon() },
       { label: "RabbitMQ", icon: rabbitmqIcon() },
     ],
   },
@@ -142,9 +145,9 @@ export const projects = [
   {
     id: 2,
     tags: ["Python & ML", "Data Engineering", "Scikit-Learn"],
-    title: "US Traffic Risk Predictor",
+    title: "US Accident Analysis",
     description:
-      "AI-powered analysis engine processing over 7 million historical records to predict traffic accident severity. Architected a data pipeline with Pandas and trained a Random Forest classification model achieving 74.14% accuracy. Currently extending the architecture with a FastAPI backend and React dashboard.",
+      "Machine Learning-powered traffic risk prediction platform designed to process and analyze over 7 million historical accident records. The system leverages Python, Pandas, and Scikit-Learn to perform large-scale data preprocessing, feature engineering, and predictive modeling, achieving 74.14% classification accuracy. The backend architecture consists of a FastAPI microservice responsible for serving a trained machine learning model through RESTful endpoints, enabling real-time traffic risk predictions. To support frontend consumption, the platform integrates a Java + Spring Boot Backend-for-Frontend (BFF) that securely orchestrates communication between services and delivers geospatial risk data to an interactive Leaflet-based map interface.",
     stack: [
       { label: "Python", icon: pythonIcon() },
       { label: "Jupyter Notebook", icon: jupyterIcon() },
@@ -268,9 +271,9 @@ export const phases = [
   },
   {
     phase:
-      "[ ] Phase 3: BFF (Backend for Frontend) Orchestrator with Node.js + TypeScript",
+      "[ ] Phase 3: BFF (Backend for Frontend) Orchestrator with Spring Boot",
     description:
-      "Developing a lightweight, type-safe API Gateway layer using Node.js and TypeScript (via Express). This service acts as the strict 'gatekeeper'—validating incoming payloads from the UI using schemas (e.g., Zod), handling data shaping, grouping, or pagination to protect client-side performance, and acts as a reverse proxy to forward clean requests to the FastAPI microservice, entirely eliminating browser CORS conflicts.",
+      "Developing a strongly-typed API Gateway layer using Java and Spring Boot. This service serves as the core orchestrator: validating incoming UI requests with strict Jakarta schemas, handling data grouping and pagination to protect frontend rendering, and acting as a secure reverse proxy that forwards clean payloads to the Python microservice, eliminating browser CORS conflicts.",
   },
   {
     phase: "[ ] Phase 4: Interactive Dashboard & Simulator with React & Mapbox",

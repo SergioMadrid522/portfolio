@@ -28,7 +28,9 @@ export default function Content() {
               </ProjectCardCompound.Description>
 
               <ProjectCardCompound.Footer>
-                <ProjectCardCompound.Badge>
+                <ProjectCardCompound.Badge
+                  isUnderDevelopment={isUnderDevelopment}
+                >
                   {isUnderDevelopment ? "Under development" : badge}
                 </ProjectCardCompound.Badge>
 
