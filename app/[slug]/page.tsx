@@ -20,7 +20,9 @@ export default async function ProjectPage({
     <main className="max-w-4xl mx-auto px-6 pt-16 relative z-10">
       <header className="mb-12">
         {project.isUnderDevelopment && (
-          <div className="inline-flex items-center gap-2 text-xs font-mono text-blue-400 bg-blue-400/10 px-3 py-1.5 rounded-full border border-blue-400/20 shadow-sm mb-6">
+          <div
+            className={`inline-flex items-center gap-2 text-xs font-mono bg-blue-400/10 px-3 py-1.5 rounded-full border border-blue-400/20 shadow-sm mb-6  ${project.isUnderDevelopment ? "text-green-400" : "text-blue-400"}`}
+          >
             Under Development
           </div>
         )}
