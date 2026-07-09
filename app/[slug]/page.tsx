@@ -32,7 +32,7 @@ export default async function ProjectPage({
         </h1>
 
         <p className="text-xl text-white/70 leading-relaxed max-w-full mb-8">
-          {project.description}
+          {project.fullDescription ?? project.description}
         </p>
 
         {project.slug === "us-traffic-predictor" && <AccidentPhases />}
