@@ -124,7 +124,9 @@ export const projects = [
     tags: ["Next.js App Router", "TypeScript", "Prisma + PostgreSQL"],
     title: "Bug Tracker MVP",
     description:
-      "Full-stack ticket management system. Architected Server/Client Component boundaries to eliminate N+1 queries. Ensured data integrity through Zod validation and managed UI state with React Context.",
+      "Full-stack platform for reporting, assigning, and tracking software issues with role-based access control (Admin, Tester, Dev). Features real-time metrics dashboards (MTTR, reopen rate, unstable modules), AI-powered severity classification via Gemini, and Excel/CSV data export. Built with Next.js, TypeScript, Prisma, and PostgreSQL, deployed on Vercel + Neon.",
+    fullDescription:
+      "A platform designed for development teams to report, assign, and track software issues while maintaining a full change history and quality metrics. Role-based access control: implemented three permission levels (Admin, Tester, Dev), each with distinct access scopes over users, projects, and tickets, protected at both the route and component level using JWT. Real-time metrics dashboards: calculated key indicators such as MTTR (mean time to resolution, measured from ticket creation to first closure), reopen rate, error trends by month/priority, and detection of unstable modules (Frontend, Backend, API, Mobile, Database), all visualized with Recharts. Automated AI classification: integrated the Google Gemini API to analyze ticket title, description, reproduction steps, and affected module, automatically classifying issue severity. History and traceability: every significant ticket change (status, assignment, priority) is logged in a timeline, enabling full audit of an issue's lifecycle. Additional features: Excel/CSV export for tickets, users, and projects for reporting purposes, soft delete for closed or cancelled tickets, and profile management with password change.",
     stack: [
       { label: "Next.js", icon: nextIcon() },
       { label: "TypeScript", icon: typescriptIcon() },
@@ -134,12 +136,13 @@ export const projects = [
       { label: "Zod", icon: zodIcon() },
       { label: "Docker", icon: dockerIcon() },
       { label: "Node.js", icon: nodeIcon() },
+      { label: "Gemini API", icon: geminiIcon() },
     ],
-    demoLink: "",
+    demoLink: "https://bug-tracker-six-eta.vercel.app",
     githubLink: "https://github.com/SergioMadrid522/proyecto-residencias",
-    badge: "E2E Tested",
+    badge: "Real-Time Analytics",
     slug: "bug-tracker",
-    isUnderDevelopment: true,
+    isUnderDevelopment: false,
     mobileFirst: false,
   },
   {
@@ -147,7 +150,9 @@ export const projects = [
     tags: ["Python & ML", "Data Engineering", "Scikit-Learn"],
     title: "US Accident Analysis",
     description:
-      "Machine Learning-powered traffic risk prediction platform designed to process and analyze over 7 million historical accident records. The system leverages Python, Pandas, and Scikit-Learn to perform large-scale data preprocessing, feature engineering, and predictive modeling, achieving 74.14% classification accuracy. The backend architecture consists of a FastAPI microservice responsible for serving a trained machine learning model through RESTful endpoints, enabling real-time traffic risk predictions. To support frontend consumption, the platform integrates a Java + Spring Boot Backend-for-Frontend (BFF) that securely orchestrates communication between services and delivers geospatial risk data to an interactive Leaflet-based map interface.",
+      "Microservices-based platform analyzing 7.7M+ historical U.S. traffic accident records (2016–2023) to predict incident severity in real time. Trained a Random Forest model (83.61% accuracy) served via a FastAPI microservice, orchestrated through a Spring Boot BFF that validates requests and computes state-level risk metrics. Visualized on an interactive GeoJSON map built with React, Leaflet, and Tailwind CSS.",
+    fullDescription:
+      "Machine Learning-powered traffic risk prediction platform designed to process and analyze over 7 million historical accident records. The system leverages Python, Pandas, and Scikit-Learn to perform large-scale data preprocessing, feature engineering, and predictive modeling, achieving 83.61% classification accuracy. The backend architecture consists of a FastAPI microservice responsible for serving a trained machine learning model through RESTful endpoints, enabling real-time traffic risk predictions. To support frontend consumption, the platform integrates a Java + Spring Boot Backend-for-Frontend (BFF) that securely orchestrates communication between services and delivers geospatial risk data to an interactive Leaflet-based map interface.",
     stack: [
       { label: "Python", icon: pythonIcon() },
       { label: "Jupyter Notebook", icon: jupyterIcon() },
@@ -262,22 +267,23 @@ export const phases = [
   {
     phase: "[x] Phase 1: ETL, EDA, and ML Model Training",
     description:
-      "Cleaning and preprocessing the 7 million historical records, conducting Exploratory Data Analysis, performing feature engineering (including One-Hot Encoding for weather conditions), training the Scikit-Learn Random Forest model to achieve a 74.14% accuracy, and exporting the trained model and feature structure into .pkl (Pickle) files.",
+      "Cleaned and preprocessed 7 million historical records, conducted exploratory data analysis, performed feature engineering (including One-Hot Encoding for weather conditions), and trained a Scikit-Learn Random Forest model achieving 83.61% accuracy. Exported the trained model and feature structure into .pkl files for",
   },
   {
     phase: "[x] Phase 2: Data & AI Microservice with FastAPI",
     description:
-      "Building a high-performance Python server that loads the serialized .pkl files into memory on startup. It will expose a GET /data endpoint to serve the optimized sample of 4,000 records (accidentes_muestra.json), a GET /columns endpoint to share the model's feature architecture, and a POST /predict endpoint to run live inference on new accident data using Scikit-Learn.",
+      "Built a high-performance Python server that loads serialized .pkl files into memory on startup for low-latency inference. Exposes a GET /data endpoint serving a 4,000-record sample dataset, a GET /columns endpoint sharing the model's feature schema, and a POST /predict endpoint for live inference on new accident data.",
   },
   {
     phase:
       "[ ] Phase 3: BFF (Backend for Frontend) Orchestrator with Spring Boot",
     description:
-      "Developing a strongly-typed API Gateway layer using Java and Spring Boot. This service serves as the core orchestrator: validating incoming UI requests with strict Jakarta schemas, handling data grouping and pagination to protect frontend rendering, and acting as a secure reverse proxy that forwards clean payloads to the Python microservice, eliminating browser CORS conflicts.",
+      "Developing a strongly-typed API Gateway using Java and Spring Boot. Validates incoming UI requests with strict Jakarta schemas, handles data grouping and pagination, and acts as a secure reverse proxy to the Python microservice, eliminating browser CORS conflicts.",
   },
   {
-    phase: "[ ] Phase 4: Interactive Dashboard & Simulator with React & Mapbox",
+    phase:
+      "[ ] Phase 4: Interactive Dashboard & Simulator with React & Leaflet",
     description:
-      "Designing a premium Modern Dark Mode user interface that consumes the structured data from the Node.js BFF. This frontend will feature an analytical dashboard with interactive charts and geospatial heatmaps powered by Mapbox to visualize historical accidents, alongside a dedicated 'Risk Simulator' form allowing users to input live variables and dynamically display prediction risk alerts returned by the machine learning pipeline.",
+      "Designing a Modern Dark Mode UI consuming structured data from the Spring Boot BFF. Features an analytical dashboard with interactive charts and geospatial visualizations powered by Leaflet, plus a dedicated 'Risk Simulator' form for live risk predictions from the ML pipeline.",
   },
 ];
